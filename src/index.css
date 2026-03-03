@@ -4,152 +4,129 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: light;
-}
+:root { color-scheme: light; }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(196,120,74,0.3) transparent;
+  scrollbar-color: rgba(184,89,58,0.35) transparent;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   font-family: "Nunito Sans", sans-serif;
-  background: radial-gradient(ellipse at 10% 10%, #081427 0%, #031022 30%, #01101a 100%);
-  color: #F6E9D6; /* texto por defecto: crema clara para buen contraste */
+  background: #F5EDE0;
+  color: #3A2415;
 }
 
-/* ───── Fondo terroso orgánico ───── */
 .fondo-terroso {
   background:
-    radial-gradient(60rem 30rem at 85% 10%, rgba(212,169,90,0.04), transparent 50%),
-    radial-gradient(40rem 24rem at 10% 20%, rgba(60,90,130,0.04), transparent 50%),
-    linear-gradient(180deg, rgba(7,23,48,1) 0%, rgba(6,18,40,1) 100%);
-
-/* Estrellas sutiles sobre el fondo */
+    radial-gradient(55rem 28rem at 90% 5%, rgba(200,146,74,0.12), transparent 55%),
+    radial-gradient(40rem 22rem at 5% 80%, rgba(184,89,58,0.08), transparent 55%),
+    linear-gradient(160deg, #F5EDE0 0%, #EDE0CF 60%, #E6D5BE 100%);
+  min-height: 100vh;
+}
 .fondo-terroso::before {
   content: "";
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle, rgba(246,233,214,0.95) 1px, transparent 1px),
-    radial-gradient(circle, rgba(246,233,214,0.6) 0.8px, transparent 0.8px);
-  background-size: 180px 180px, 60px 60px;
-  opacity: 0.55;
+    radial-gradient(circle, rgba(92,53,34,0.14) 1px, transparent 1px),
+    radial-gradient(circle, rgba(92,53,34,0.07) 0.7px, transparent 0.7px);
+  background-size: 200px 200px, 70px 70px;
   pointer-events: none;
-  mix-blend-mode: screen;
-}
-    /* Cambiado a un fondo más oscuro */
 }
 
-/* ───── Card orgánica ───── */
 .alma-card {
-  /* fondo ligeramente más claro que el general */
-  background: linear-gradient(180deg, rgba(255,249,238,0.99), rgba(255,251,244,0.99));
-  color: #071730; /* texto oscuro dentro de cards */
-  backdrop-filter: blur(4px);
-  box-shadow: 0 10px 40px rgba(7,23,48,0.14);
-  border: 1.5px solid rgba(212,169,90,0.55); /* borde dorado */
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  background: rgba(255,251,245,0.94);
+  color: #3A2415;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 24px rgba(92,53,34,0.10), 0 1px 0 rgba(255,255,255,0.8) inset;
+  border: 1.5px solid rgba(184,89,58,0.22);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
-
 .alma-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 60px rgba(7,23,48,0.22);
-  border-color: rgba(212,169,90,0.9);
+  transform: translateY(-5px);
+  box-shadow: 0 14px 48px rgba(92,53,34,0.16), 0 1px 0 rgba(255,255,255,0.9) inset;
+  border-color: rgba(184,89,58,0.50);
 }
 
-/* ───── Wheel decorativo ───── */
+.btn-terracota {
+  display: inline-block;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #B8593A 0%, #9C4A2E 100%);
+  padding: 0.75rem 1.75rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #FFF8F0;
+  border: 1.5px solid rgba(92,53,34,0.18);
+  box-shadow: 0 4px 16px rgba(184,89,58,0.28);
+  transition: filter 180ms ease, transform 180ms ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-terracota:hover { filter: brightness(1.08); transform: translateY(-2px); }
+
+.btn-sage {
+  display: inline-block;
+  border-radius: 9999px;
+  background: transparent;
+  padding: 0.72rem 1.75rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #5C3522;
+  border: 2px solid rgba(92,53,34,0.38);
+  transition: background 180ms ease, border-color 180ms ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-sage:hover { background: rgba(92,53,34,0.07); border-color: #B8593A; color: #9C4A2E; }
+
 .constelacion-wheel {
-  width: min(330px, 100%);
+  width: min(300px, 100%);
   aspect-ratio: 1 / 1;
   border-radius: 9999px;
   position: relative;
-  border: 2px solid rgba(246,233,214,0.12); /* borde crema sutil */
+  border: 2px solid rgba(184,89,58,0.25);
   box-shadow:
-    inset 0 0 0 16px rgba(250,250,250,0.8),
-    inset 0 0 0 17px rgba(196,120,74,0.25),
-    0 0 45px rgba(196,120,74,0.12);
+    inset 0 0 0 16px rgba(255,250,243,0.9),
+    inset 0 0 0 18px rgba(184,89,58,0.18),
+    0 0 50px rgba(184,89,58,0.10);
   background:
-    radial-gradient(circle at 50% 50%, rgba(196,120,74,0.12) 0 2px, transparent 3px),
-    repeating-conic-gradient(
-      from 0deg,
-      rgba(196,120,74,0.35) 0deg 1deg,
-      transparent 1deg 30deg
-    ),
-    radial-gradient(circle at 50% 50%, rgba(7,23,48,0.9), rgba(10,35,65,0.98));
+    repeating-conic-gradient(from 0deg, rgba(184,89,58,0.22) 0deg 1deg, transparent 1deg 30deg),
+    radial-gradient(circle at 50% 50%, #F5EDE0, #EDE0CF);
 }
-
-.constelacion-wheel::before,
-.constelacion-wheel::after {
+.constelacion-wheel::before, .constelacion-wheel::after {
   content: "";
   position: absolute;
   inset: 16%;
   border-radius: 9999px;
-  border: 1px solid rgba(196,120,74,0.22);
+  border: 1px solid rgba(184,89,58,0.18);
 }
+.constelacion-wheel::after { inset: 34%; }
 
-.constelacion-wheel::after {
-  inset: 34%;
-}
-
-/* ───── Botón primario ───── */
-.btn-terracota {
-  @apply rounded-full bg-gradient-to-r from-terracota to-oro px-7 py-3 text-sm font-bold uppercase tracking-[0.17em] text-crema shadow-warm transition;
-  border: 1px solid rgba(246,233,214,0.08);
-}
-.btn-terracota:hover {
-  filter: brightness(1.1);
-  transform: translateY(-1px);
-}
-
-/* ───── Botón secundario ───── */
-.btn-sage {
-  @apply rounded-full border-2 border-oro bg-arena px-7 py-3 text-sm font-bold uppercase tracking-[0.17em] text-texto transition;
-  border-color: rgba(246,233,214,0.18);
-}
-.btn-sage:hover {
-  @apply bg-sage/10 border-sage;
-}
-
-/* ───── Decorativo: línea separadora orgánica ───── */
 .organic-divider {
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(196,120,74,0.4), rgba(139,154,123,0.3), transparent);
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, rgba(184,89,58,0.32), rgba(122,140,110,0.20), transparent);
 }
+.shadow-aura { box-shadow: 0 8px 32px rgba(92,53,34,0.12); }
 
-/* ───── Animaciones ───── */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
-
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(196,120,74,0.15); }
-  50% { box-shadow: 0 0 35px rgba(196,120,74,0.25); }
+  0%, 100% { box-shadow: 0 0 20px rgba(184,89,58,0.12); }
+  50% { box-shadow: 0 0 36px rgba(184,89,58,0.22); }
 }
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.7s ease-out forwards;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 4s ease-in-out infinite;
-}
+.animate-float      { animation: float 6s ease-in-out infinite; }
+.animate-fade-in-up { animation: fadeInUp 0.65s ease-out forwards; }
+.animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
