@@ -43,9 +43,9 @@ function Home() {
             Un espacio cálido y espiritual para leer tu energía, ordenar tu sistema
             y crear un nuevo camino con conciencia.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">Reservar Turno</a>
-            <Link to="/carta-astral" className="btn-sage flex items-center">Ver Servicios</Link>
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+            <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde text-center">Reservar Turno</a>
+            <Link to="/carta-astral" className="btn-sage text-center flex items-center justify-center">Ver Servicios</Link>
           </div>
         </section>
 

@@ -27,7 +27,7 @@ export default function Header() {
               alt="De Raíz al Alma"
               decoding="async"
               fetchPriority="high"
-              className="h-32 w-32 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-24 md:w-24"
+              className="h-16 w-16 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-24 md:w-24"
             />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
@@ -58,7 +58,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">
+          <a href={WA_URL} target="_blank" rel="noreferrer" className="hidden lg:block btn-verde">
             Agendar Sesión
           </a>
           <button
@@ -91,9 +91,6 @@ export default function Header() {
                 </Link>
               );
             })}
-            <a href={WA_URL} target="_blank" rel="noreferrer" className="mt-3 w-full rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2.5 text-sm font-semibold tracking-[0.03em] text-[#FFF8F0] transition-all block text-center">
-              Agendar Sesión
-            </a>
           </div>
         </nav>
       )}
