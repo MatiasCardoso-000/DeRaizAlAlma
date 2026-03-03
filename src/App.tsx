@@ -97,7 +97,7 @@ function Home() {
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#F5EDE0] text-[#3A2415] selection:bg-[#B8593A]/25 font-body">
+    <div className="min-h-screen bg-[#FFE6F0] text-[#3A2415] selection:bg-[#B8593A]/25 font-body">
       <ScrollToTop />
       <Routes>
         <Route path="/"                 element={<Home />} />
