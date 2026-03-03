@@ -5,13 +5,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        tierra: "#FAFAFA",
-        terracota: "#C4784A",
-        arena: "#3F3F46",
-        crema: "#27272A",
+        /* Paleta inspirada en la imagen adjunta */
+        tierra: "#071730",    // fondo navy profundo
+        terracota: "#C4784A", // terracota/dorado (acento)
+        oro: "#D4A95A",       // dorado cálido
+        arena: "#F6E9D6",     // crema clara para cards y textos sobre fondo oscuro
+        crema: "#FFF9F1",     // blanco cálido
+        texto: "#071730",     // texto oscuro (navy) para sobre fondos claros
         sage: "#8B9A7B",
-        marron: "#E4E4E7",
-        caoba: "#D4D4D8",
+        marron: "#3D2417",
+        caoba: "#3D2417",
       },
       boxShadow: {
         aura: "0 0 0 1px rgba(196,120,74,0.2), 0 0 42px rgba(139,154,123,0.15)",
