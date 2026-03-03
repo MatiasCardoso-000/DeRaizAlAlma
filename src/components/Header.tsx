@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
-const WA_URL = "https://wa.me/5491155556666";
+const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Me gustaria agendar una sesion. Podes contarme mas sobre tus servicios?")}`;
 // @ts-ignore
 import logo from "../assets/logo.png";
 
@@ -25,7 +25,7 @@ export default function Header() {
             <img
               src={logo}
               alt="De Raíz al Alma"
-              className="h-32 w-3h-32 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-24 md:w-24"
+              className="h-32 w-32 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-24 md:w-24"
             />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">

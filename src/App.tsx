@@ -1,4 +1,11 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
 import CartaAstral from "./pages/CartaAstral";
 import Constelaciones from "./pages/Constelaciones";
 import RevolucionSolar from "./pages/RevolucionSolar";
@@ -8,7 +15,7 @@ import Footer from "./components/Footer";
 // @ts-ignore
 import cartaAstralImg from "./assets/carta-astral.jpeg";
 
-const WA_URL = "https://wa.me/5491155556666";
+const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Me gustaria reservar una sesion. Podes contarme mas sobre tus servicios?")}`;
 
 const servicios = [
   { titulo: "Carta Astral",           descripcion: "Descubre tus dones, desafíos y propósito con un mapa energético profundo.",                             link: "/carta-astral",     icono: "🌅" },
@@ -88,6 +95,7 @@ function Home() {
 export default function App() {
   return (
     <div className="min-h-screen bg-[#F5EDE0] text-[#3A2415] selection:bg-[#B8593A]/25 font-body">
+      <ScrollToTop />
       <Routes>
         <Route path="/"                 element={<Home />} />
         <Route path="/carta-astral"     element={<CartaAstral />} />

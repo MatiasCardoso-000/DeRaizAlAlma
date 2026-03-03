@@ -1,6 +1,6 @@
 import PageLayout from "../components/PageLayout";
 
-const WA_URL = "https://wa.me/5491155556666";
+const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero agendar mi sesion de Constelaciones. Siento que es el momento de sanar desde la raiz.")}`;
 
 const herramientas = [
   {

@@ -1,6 +1,6 @@
 import PageLayout from "../components/PageLayout";
 
-const WA_URL = "https://wa.me/5491155556666";
+const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero encargar mi Revolucion Solar. Estoy lista/listo para vivir este ciclo con conciencia y direccion.")}`;
 
 const aspectos = [
   {

@@ -1,6 +1,6 @@
 import PageLayout from "../components/PageLayout";
 
-const WA_URL = "https://wa.me/5491155556666";
+const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero conocer mi Carta Astral. Estoy lista/listo para descubrir el mapa de mi alma.")}`;
 
 const aspectos = [
   {

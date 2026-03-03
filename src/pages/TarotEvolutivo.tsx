@@ -1,6 +1,6 @@
 import PageLayout from "../components/PageLayout";
 
-const WA_URL = "https://wa.me/5491155556666";
+const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero solicitar una lectura de Tarot Evolutivo. Estoy lista/listo para escuchar lo que mi inconsciente tiene para decirme.")}`;
 
 const claves = [
   { titulo: "Enfoque en el Presente",       icono: "⏳", descripcion: "Se concentra en el «aquí y ahora» y en las acciones que puedes tomar hoy, diferenciándose del tarot predictivo que se enfoca en sucesos futuros." },
