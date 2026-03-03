@@ -38,15 +38,15 @@ const servicios = [
 
 function Home() {
   return (
-    <div className="fondo-terroso relative overflow-hidden text-arena">
+    <div className="fondo-terroso relative overflow-hidden text-black">
       <Header />
 
       <main className="mx-auto grid w-full max-w-6xl gap-12 px-6 pb-20 pt-8 md:grid-cols-2 md:items-center md:px-10 md:pb-28">
         <section className="animate-fade-in-up">
-          <p className="mb-4 inline-block rounded-full border border-terracota/40 bg-marron/70 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-terracota">
+          <p className="mb-4 inline-block rounded-full border border-terracota/40 bg-marron/70 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-black">
             Constelaciones · Tarot · Astrología
           </p>
-          <h1 className="font-serifDisplay text-5xl leading-[0.95] text-crema sm:text-6xl md:text-7xl">
+          <h1 className="font-serifDisplay text-5xl leading-[0.95] text-black sm:text-6xl md:text-7xl">
             Guía cósmica para
             <span className="block text-terracota">volver a tu centro</span>
           </h1>
@@ -66,7 +66,7 @@ function Home() {
         </section>
 
         
-          <p className="text-center text-sm leading-relaxed text-arena/80 italic font-serifDisplay">
+          <p className="text-center text-sm leading-relaxed text-black italic font-serifDisplay">
             "Cuando una persona constela, sana todo su linaje".
           </p>
       </main>
