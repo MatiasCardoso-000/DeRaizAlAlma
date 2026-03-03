@@ -47,7 +47,7 @@ export default function TarotEvolutivo() {
           El tarot no predice tu destino, te ayuda a crearlo.
           Descubre las llaves que ya tienes para abrir las puertas de tu evolución.
         </p>
-        <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-terracota inline-block px-10 py-4">
+        <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">
           Solicitar Lectura
         </a>
       </section>

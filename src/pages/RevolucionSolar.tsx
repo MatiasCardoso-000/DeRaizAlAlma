@@ -54,7 +54,7 @@ export default function RevolucionSolar() {
         <p className="text-base leading-relaxed text-[#5C3522]/80 sm:text-lg mb-8">
           Es una herramienta de claridad y dirección para que tu año no pase por vos… sino que lo vivas de manera activa y consciente.
         </p>
-        <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-terracota inline-block px-10 py-4">
+        <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">
           Encargar mi Revolución
         </a>
       </section>

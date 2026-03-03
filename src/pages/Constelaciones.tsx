@@ -45,6 +45,8 @@ export default function Constelaciones() {
           <img
             src={arbolLibroImg}
             alt="Árbol de la vida"
+            decoding="async"
+            fetchPriority="high"
             className="w-full max-w-[340px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 animate-float"
           />
         </div>
@@ -69,7 +71,7 @@ export default function Constelaciones() {
         <p className="text-xs font-bold uppercase tracking-[0.20em] text-[#B8593A]/70 mb-8">
           Sesión individual · Virtual o presencial
         </p>
-        <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-terracota inline-block px-10 py-4">
+        <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">
           Agendar mi Sesión
         </a>
       </section>

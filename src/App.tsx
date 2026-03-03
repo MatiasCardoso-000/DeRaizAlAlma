@@ -7,14 +7,14 @@ import TarotEvolutivo from "./pages/TarotEvolutivo";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+// @ts-ignore
+import cartaAstralImg from "./assets/carta-astral.jpeg";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   return null;
 }
-// @ts-ignore
-import cartaAstralImg from "./assets/carta-astral.jpeg";
 
 const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Me gustaría reservar una sesión. Podes contarme mas sobre tus servicios?")}`;
 
@@ -44,7 +44,7 @@ function Home() {
             y crear un nuevo camino con conciencia.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-terracota">Reservar Turno</a>
+            <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">Reservar Turno</a>
             <Link to="/carta-astral" className="btn-sage flex items-center">Ver Servicios</Link>
           </div>
         </section>
@@ -53,6 +53,8 @@ function Home() {
           <img
             src={cartaAstralImg}
             alt="Carta Astral"
+            decoding="async"
+            fetchPriority="high"
             className="animate-float w-full max-w-[320px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 md:max-w-[380px]"
           />
           <p className="text-center text-sm leading-relaxed text-[#5C3522]/70 italic font-serifDisplay max-w-xs">

@@ -70,7 +70,7 @@ export default function CartaAstral() {
             </div>
           ))}
         </div>
-        <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-terracota mt-10 inline-block px-10 py-4">
+        <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde mt-4">
           Obtener mi Carta Astral
         </a>
       </section>

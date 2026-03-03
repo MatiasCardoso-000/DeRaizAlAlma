@@ -25,11 +25,13 @@ export default function Header() {
             <img
               src={logo}
               alt="De Raíz al Alma"
+              decoding="async"
+              fetchPriority="high"
               className="h-32 w-32 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-24 md:w-24"
             />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
-            <span className="font-serifDisplay text-3xl text-[#5C3522]">De Raíz al Alma</span>
+            <span className="font-body text-3xl text-[#5C3522]">De Raíz al Alma</span>
             <span className="text-[0.6rem] uppercase tracking-[0.22em] text-[#8A7A6E] font-semibold">
               Constelaciones · Tarot · Astrología
             </span>
@@ -56,7 +58,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <a href={WA_URL} target="_blank" rel="noreferrer" className="hidden md:block rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2 text-sm font-semibold tracking-[0.03em] text-[#FFF8F0] shadow-sm transition-all hover:shadow-md hover:-translate-y-px">
+          <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">
             Agendar Sesión
           </a>
           <button
