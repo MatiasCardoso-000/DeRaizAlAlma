@@ -1,5 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+
+const WA_URL = "https://wa.me/5491155556666";
 // @ts-ignore
 import logo from "../assets/logo.png";
 
@@ -54,9 +56,9 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button className="hidden md:block rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#FFF8F0] shadow-sm transition-all hover:shadow-md hover:-translate-y-px">
+          <a href={WA_URL} target="_blank" rel="noreferrer" className="hidden md:block rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#FFF8F0] shadow-sm transition-all hover:shadow-md hover:-translate-y-px">
             Agendar Sesión
-          </button>
+          </a>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden flex flex-col gap-1.5 p-1"
@@ -87,9 +89,9 @@ export default function Header() {
                 </Link>
               );
             })}
-            <button className="mt-3 w-full rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2.5 text-xs font-bold uppercase tracking-[0.18em] text-[#FFF8F0] transition-all">
+            <a href={WA_URL} target="_blank" rel="noreferrer" className="mt-3 w-full rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2.5 text-xs font-bold uppercase tracking-[0.18em] text-[#FFF8F0] transition-all block text-center">
               Agendar Sesión
-            </button>
+            </a>
           </div>
         </nav>
       )}
