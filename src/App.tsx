@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 // @ts-ignore
 import cartaAstralImg from "./assets/carta-astral.jpeg";
 
-const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Me gustaria reservar una sesion. Podes contarme mas sobre tus servicios?")}`;
+const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Me gustaría reservar una sesión. Podes contarme mas sobre tus servicios?")}`;
 
 const servicios = [
   { titulo: "Carta Astral",           descripcion: "Descubre tus dones, desafíos y propósito con un mapa energético profundo.",                             link: "/carta-astral",     icono: "🌅" },

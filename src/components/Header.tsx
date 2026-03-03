@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
-const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Me gustaria agendar una sesion. Podes contarme mas sobre tus servicios?")}`;
+const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Me gustaría agendar una sesión. Podes contarme mas sobre tus servicios?")}`;
 // @ts-ignore
 import logo from "../assets/logo.png";
 
