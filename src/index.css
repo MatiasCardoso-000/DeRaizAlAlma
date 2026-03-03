@@ -24,15 +24,15 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 1.65;
-  background: #F5EDE0;
+  background: #FFE6F0;
   color: #3A2415;
 }
 
 .fondo-terroso {
   background:
-    radial-gradient(55rem 28rem at 90% 5%, rgba(200,146,74,0.12), transparent 55%),
-    radial-gradient(40rem 22rem at 5% 80%, rgba(184,89,58,0.08), transparent 55%),
-    linear-gradient(160deg, #F5EDE0 0%, #EDE0CF 60%, #E6D5BE 100%);
+    radial-gradient(55rem 28rem at 90% 5%, rgba(240,184,216,0.12), transparent 55%),
+    radial-gradient(40rem 22rem at 5% 80%, rgba(255,169,205,0.08), transparent 55%),
+    linear-gradient(160deg, #FFE6F0 0%, #FFD9E6 60%, #FFC9D9 100%);
   min-height: 100vh;
 }
 .fondo-terroso::before {
@@ -145,7 +145,7 @@ body {
 /* Rendimiento móvil: fondo simplificado */
 @media (max-width: 768px) {
   .fondo-terroso {
-    background: linear-gradient(160deg, #F5EDE0 0%, #EDE0CF 60%, #E6D5BE 100%);
+    background: linear-gradient(160deg, #FFE6F0 0%, #FFD9E6 60%, #FFC9D9 100%);
   }
   .fondo-terroso::before {
     display: none;
