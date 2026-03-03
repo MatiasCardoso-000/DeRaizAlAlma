@@ -5,17 +5,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        night: "#080c1a",
-        gold: "#d5b67a",
-        amber: "#f2c77f",
-        violetMist: "#6f4bb8",
+        tierra: "#1A1209",
+        terracota: "#C4784A",
+        arena: "#E8CEB0",
+        crema: "#FAF3EB",
+        sage: "#8B9A7B",
+        marron: "#2A1810",
+        caoba: "#3D2417",
       },
       boxShadow: {
-        aura: "0 0 0 1px rgba(213,182,122,0.2), 0 0 42px rgba(111,75,184,0.2)",
+        aura: "0 0 0 1px rgba(196,120,74,0.2), 0 0 42px rgba(139,154,123,0.15)",
+        warm: "0 8px 30px rgba(196,120,74,0.25)",
+        card: "0 4px 24px rgba(26,18,9,0.4)",
       },
       fontFamily: {
-        serifDisplay: ["Cinzel", "serif"],
-        body: ["Montserrat", "sans-serif"],
+        serifDisplay: ["Playfair Display", "serif"],
+        body: ["Nunito Sans", "sans-serif"],
+        script: ["Dancing Script", "cursive"],
       },
     },
   },

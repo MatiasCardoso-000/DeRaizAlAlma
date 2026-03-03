@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,48 +8,54 @@
   color-scheme: dark;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(196,120,74,0.3) transparent;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
-  background: #080c1a;
+  font-family: "Nunito Sans", sans-serif;
+  background: #1A1209;
 }
 
-.fondo-estelar {
+/* ───── Fondo terroso orgánico ───── */
+.fondo-terroso {
   background:
-    radial-gradient(70rem 40rem at 82% 12%, rgba(111, 75, 184, 0.24), transparent 60%),
-    radial-gradient(45rem 28rem at 10% 22%, rgba(145, 112, 215, 0.18), transparent 62%),
-    radial-gradient(circle at 20% 20%, rgba(255, 241, 199, 0.18) 1px, transparent 1.5px),
-    radial-gradient(circle at 60% 60%, rgba(255, 226, 166, 0.14) 1px, transparent 1.5px),
-    #080c1a;
-  background-size: auto, auto, 120px 120px, 160px 160px, auto;
+    radial-gradient(70rem 40rem at 82% 12%, rgba(196,120,74,0.12), transparent 60%),
+    radial-gradient(45rem 28rem at 10% 22%, rgba(139,154,123,0.10), transparent 62%),
+    radial-gradient(circle at 30% 70%, rgba(196,120,74,0.06), transparent 50%),
+    #1A1209;
 }
 
-.astro-card {
+/* ───── Card orgánica ───── */
+.alma-card {
   background:
-    linear-gradient(180deg, rgba(20, 15, 42, 0.78), rgba(9, 12, 27, 0.82)),
-    radial-gradient(circle at 20% 10%, rgba(242, 199, 127, 0.16), transparent 42%);
-  backdrop-filter: blur(3px);
+    linear-gradient(180deg, rgba(42,24,16,0.85), rgba(26,18,9,0.90)),
+    radial-gradient(circle at 20% 10%, rgba(196,120,74,0.10), transparent 42%);
+  backdrop-filter: blur(6px);
 }
 
+/* ───── Wheel decorativo ───── */
 .constelacion-wheel {
   width: min(330px, 100%);
   aspect-ratio: 1 / 1;
   border-radius: 9999px;
   position: relative;
-  border: 2px solid rgba(242, 199, 127, 0.65);
+  border: 2px solid rgba(196,120,74,0.5);
   box-shadow:
-    inset 0 0 0 16px rgba(7, 10, 23, 0.7),
-    inset 0 0 0 17px rgba(242, 199, 127, 0.35),
-    0 0 45px rgba(242, 199, 127, 0.2);
+    inset 0 0 0 16px rgba(26,18,9,0.7),
+    inset 0 0 0 17px rgba(196,120,74,0.25),
+    0 0 45px rgba(196,120,74,0.12);
   background:
-    radial-gradient(circle at 50% 50%, rgba(242, 199, 127, 0.16) 0 2px, transparent 3px),
+    radial-gradient(circle at 50% 50%, rgba(196,120,74,0.12) 0 2px, transparent 3px),
     repeating-conic-gradient(
       from 0deg,
-      rgba(242, 199, 127, 0.5) 0deg 1deg,
+      rgba(196,120,74,0.35) 0deg 1deg,
       transparent 1deg 30deg
     ),
-    radial-gradient(circle at 50% 50%, rgba(10, 14, 31, 0.4), rgba(7, 10, 23, 0.9));
+    radial-gradient(circle at 50% 50%, rgba(42,24,16,0.5), rgba(26,18,9,0.9));
 }
 
 .constelacion-wheel::before,
@@ -58,9 +64,66 @@ body {
   position: absolute;
   inset: 16%;
   border-radius: 9999px;
-  border: 1px solid rgba(242, 199, 127, 0.32);
+  border: 1px solid rgba(196,120,74,0.22);
 }
 
 .constelacion-wheel::after {
   inset: 34%;
+}
+
+/* ───── Botón primario ───── */
+.btn-terracota {
+  @apply rounded-full bg-gradient-to-r from-terracota to-[#D4915E] px-7 py-3 text-sm font-bold uppercase tracking-[0.17em] text-crema shadow-warm transition;
+}
+.btn-terracota:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+/* ───── Botón secundario ───── */
+.btn-sage {
+  @apply rounded-full border border-sage/50 bg-tierra/60 px-7 py-3 text-sm font-bold uppercase tracking-[0.17em] text-arena transition;
+}
+.btn-sage:hover {
+  @apply bg-sage/20 border-sage/70;
+}
+
+/* ───── Decorativo: línea separadora orgánica ───── */
+.organic-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(196,120,74,0.4), rgba(139,154,123,0.3), transparent);
+}
+
+/* ───── Animaciones ───── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(196,120,74,0.15); }
+  50% { box-shadow: 0 0 35px rgba(196,120,74,0.25); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
 }
