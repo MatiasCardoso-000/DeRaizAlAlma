@@ -46,14 +46,19 @@ body {
 
 /* ───── Card orgánica ───── */
 .alma-card {
-  background:
-    linear-gradient(180deg, rgba(246,233,214,0.98), rgba(255,249,241,0.99));
+  /* fondo ligeramente más claro que el general */
+  background: linear-gradient(180deg, rgba(255,249,238,0.99), rgba(255,251,244,0.99));
   color: #071730; /* texto oscuro dentro de cards */
   backdrop-filter: blur(4px);
-  box-shadow: 0 8px 30px rgba(7,23,48,0.12);
-  border: 1px solid rgba(246,233,214,0.18); /* borde crema */
-  backdrop-filter: blur(4px);
-  color: #071730; /* texto oscuro dentro de cards */
+  box-shadow: 0 10px 40px rgba(7,23,48,0.14);
+  border: 1.5px solid rgba(212,169,90,0.55); /* borde dorado */
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.alma-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 60px rgba(7,23,48,0.22);
+  border-color: rgba(212,169,90,0.9);
 }
 
 /* ───── Wheel decorativo ───── */
