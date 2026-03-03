@@ -25,7 +25,7 @@ export default function Header() {
             <img
               src={logo}
               alt="De Raíz al Alma"
-              className="h-20 w-20 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-24 md:w-24"
+              className="h-32 w-3h-32 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-24 md:w-24"
             />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
