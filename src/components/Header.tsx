@@ -32,7 +32,7 @@ export default function Header() {
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
             <span className="font-body text-3xl text-[#5C3522]">De Raíz al Alma</span>
-            <span className="text-[0.6rem] uppercase tracking-[0.22em] text-[#8A7A6E] font-semibold">
+            <span className="text-[0.6rem] uppercase tracking-[0.22em] text-[#8A7A6E] font-semibold whitespace-nowrap">
               Constelaciones · Tarot · Astrología
             </span>
           </div>

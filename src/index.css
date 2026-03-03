@@ -97,6 +97,16 @@ body {
 }
 .btn-verde:hover { filter: brightness(1.1); transform: translateY(-2px); background: #4E7565; }
 
+@media (max-width: 640px) {
+  .btn-verde {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
 .btn-sage {
   display: inline-block;
   border-radius: 9999px;
