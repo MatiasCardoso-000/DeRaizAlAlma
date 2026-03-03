@@ -1,4 +1,5 @@
 import PageLayout from "../components/PageLayout";
+import { useSeo } from "../hooks/useSeo";
 // @ts-ignore
 import arbolLibroImg from "../assets/arbol-libro.jpeg";
 
@@ -23,6 +24,7 @@ const herramientas = [
 ];
 
 export default function Constelaciones() {
+  useSeo("Constelaciones y Reprogramación Emocional", "Explorá las dinámicas de tu sistema familiar y saná patrones emocionales con constelaciones, hipnosis clínica y desprogramación emocional.");
   return (
     <PageLayout>
       {/* Hero */}
@@ -31,7 +33,7 @@ export default function Constelaciones() {
           <p className="mb-4 inline-block rounded-full border border-[#B8593A]/40 bg-[#B8593A]/10 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-[#B8593A]">
             Sanación Sistémica
           </p>
-          <h1 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl md:text-6xl mb-6">
+          <h1 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl md:text-5xl mb-6 leading-tight">
             Constelaciones y Reprogramación Emocional
           </h1>
           <p className="text-base leading-relaxed text-[#5C3522]/75 sm:text-lg">

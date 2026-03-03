@@ -4,6 +4,7 @@ import CartaAstral from "./pages/CartaAstral";
 import Constelaciones from "./pages/Constelaciones";
 import RevolucionSolar from "./pages/RevolucionSolar";
 import TarotEvolutivo from "./pages/TarotEvolutivo";
+import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -34,7 +35,7 @@ function Home() {
           <p className="mb-4 inline-block rounded-full border border-[#B8593A]/40 bg-[#B8593A]/8 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-[#B8593A]">
             Constelaciones · Tarot · Astrología
           </p>
-          <h1 className="font-serifDisplay text-5xl leading-[0.95] text-[#3A2415] sm:text-6xl md:text-7xl">
+          <h1 className="font-serifDisplay text-4xl leading-tight text-[#3A2415] sm:text-5xl md:text-5xl">
             Guía cósmica para
             <span className="block text-[#B8593A]">volver a tu centro</span>
           </h1>
@@ -102,6 +103,7 @@ export default function App() {
         <Route path="/constelaciones"   element={<Constelaciones />} />
         <Route path="/revolucion-solar" element={<RevolucionSolar />} />
         <Route path="/tarot-evolutivo"  element={<TarotEvolutivo />} />
+        <Route path="*"                 element={<NotFound />} />
       </Routes>
     </div>
   );

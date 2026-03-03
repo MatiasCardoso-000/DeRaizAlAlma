@@ -1,4 +1,5 @@
 import PageLayout from "../components/PageLayout";
+import { useSeo } from "../hooks/useSeo";
 
 const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero solicitar una lectura de Tarot Evolutivo. Estoy lista/listo para escuchar lo que mi inconsciente tiene para decirme.")}`;
 
@@ -10,6 +11,7 @@ const claves = [
 ];
 
 export default function TarotEvolutivo() {
+  useSeo("Tarot Evolutivo", "Lecturas conscientes de tarot para entender tus bloqueos, tomar decisiones y crear tu futuro con conciencia.");
   return (
     <PageLayout>
       {/* Hero */}
@@ -17,7 +19,7 @@ export default function TarotEvolutivo() {
         <p className="mb-4 inline-block rounded-full border border-[#B8593A]/40 bg-[#B8593A]/10 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-[#B8593A]">
           Conciencia y Evolución
         </p>
-        <h1 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl md:text-6xl mb-6">
+        <h1 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl md:text-5xl mb-6 leading-tight">
           Tarot Evolutivo
         </h1>
         <p className="text-base leading-relaxed text-[#5C3522]/75 sm:text-lg">

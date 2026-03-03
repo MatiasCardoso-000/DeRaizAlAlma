@@ -1,4 +1,5 @@
 import PageLayout from "../components/PageLayout";
+import { useSeo } from "../hooks/useSeo";
 
 const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero conocer mi Carta Astral. Estoy lista/listo para descubrir el mapa de mi alma.")}`;
 
@@ -24,6 +25,7 @@ const aspectos = [
 ];
 
 export default function CartaAstral() {
+  useSeo("Carta Astral", "Descubrí tus dones, desafíos y propósito con tu carta astral. Un mapa energético profundo de tu alma.");
   return (
     <PageLayout>
       {/* Hero */}
@@ -31,7 +33,7 @@ export default function CartaAstral() {
         <p className="mb-4 inline-block rounded-full border border-[#B8593A]/40 bg-[#B8593A]/10 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-[#B8593A]">
           Conocimiento Milenario
         </p>
-        <h1 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl md:text-6xl mb-6">
+        <h1 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl md:text-5xl mb-6 leading-tight">
           La Carta Astral
         </h1>
         <p className="text-base leading-relaxed text-[#5C3522]/75 sm:text-lg mb-3">

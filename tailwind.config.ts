@@ -22,9 +22,9 @@ export default {
         card: "0 4px 24px rgba(26,18,9,0.4)",
       },
       fontFamily: {
-        serifDisplay: ["Playfair Display", "serif"],
-        body: ["Nunito Sans", "sans-serif"],
-        script: ["Dancing Script", "cursive"],
+        serifDisplay: ["Great Vibes", "cursive"],
+        body: ["Raleway", "sans-serif"],
+        script: ["Great Vibes", "cursive"],
       },
     },
   },

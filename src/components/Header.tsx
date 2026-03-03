@@ -29,7 +29,7 @@ export default function Header() {
             />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
-            <span className="font-script text-2xl text-[#5C3522] tracking-wide">De Raíz al Alma</span>
+            <span className="font-serifDisplay text-3xl text-[#5C3522]">De Raíz al Alma</span>
             <span className="text-[0.6rem] uppercase tracking-[0.22em] text-[#8A7A6E] font-semibold">
               Constelaciones · Tarot · Astrología
             </span>
@@ -43,7 +43,7 @@ export default function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-xs font-bold uppercase tracking-[0.12em] transition-colors pb-0.5 ${
+                className={`text-sm font-semibold tracking-[0.03em] transition-colors pb-0.5 ${
                   isActive
                     ? "text-[#B8593A] border-b-2 border-[#B8593A]"
                     : "text-[#5C3522]/75 hover:text-[#B8593A]"
@@ -56,7 +56,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <a href={WA_URL} target="_blank" rel="noreferrer" className="hidden md:block rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#FFF8F0] shadow-sm transition-all hover:shadow-md hover:-translate-y-px">
+          <a href={WA_URL} target="_blank" rel="noreferrer" className="hidden md:block rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2 text-sm font-semibold tracking-[0.03em] text-[#FFF8F0] shadow-sm transition-all hover:shadow-md hover:-translate-y-px">
             Agendar Sesión
           </a>
           <button
@@ -81,7 +81,7 @@ export default function Header() {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`py-2.5 px-3 rounded-xl text-sm font-bold uppercase tracking-[0.10em] transition-colors ${
+                  className={`py-2.5 px-3 rounded-xl text-sm font-semibold tracking-[0.02em] transition-colors ${
                     isActive ? "text-[#B8593A] bg-[#B8593A]/10" : "text-[#5C3522]/80 hover:text-[#B8593A]"
                   }`}
                 >
@@ -89,7 +89,7 @@ export default function Header() {
                 </Link>
               );
             })}
-            <a href={WA_URL} target="_blank" rel="noreferrer" className="mt-3 w-full rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2.5 text-xs font-bold uppercase tracking-[0.18em] text-[#FFF8F0] transition-all block text-center">
+            <a href={WA_URL} target="_blank" rel="noreferrer" className="mt-3 w-full rounded-full bg-[#B8593A] hover:bg-[#9C4A2E] px-5 py-2.5 text-sm font-semibold tracking-[0.03em] text-[#FFF8F0] transition-all block text-center">
               Agendar Sesión
             </a>
           </div>
