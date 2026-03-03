@@ -1,4 +1,6 @@
 import PageLayout from "../components/PageLayout";
+// @ts-ignore
+import arbolLibroImg from "../assets/arbol-libro.jpeg";
 
 const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero agendar mi sesion de Constelaciones. Siento que es el momento de sanar desde la raiz.")}`;
 
@@ -24,17 +26,26 @@ export default function Constelaciones() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="mb-14 max-w-3xl animate-fade-in-up">
-        <p className="mb-4 inline-block rounded-full border border-[#B8593A]/40 bg-[#B8593A]/10 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-[#B8593A]">
-          Sanación Sistémica
-        </p>
-        <h1 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl md:text-6xl mb-6">
-          Constelaciones y Reprogramación Emocional
-        </h1>
-        <p className="text-base leading-relaxed text-[#5C3522]/75 sm:text-lg">
-          En mi trabajo integro diferentes herramientas terapéuticas para acompañarte a encontrar
-          la raíz de aquello que hoy genera bloqueo, dolor o repetición en tu vida.
-        </p>
+      <section className="mb-14 grid md:grid-cols-2 md:items-center gap-10 animate-fade-in-up">
+        <div>
+          <p className="mb-4 inline-block rounded-full border border-[#B8593A]/40 bg-[#B8593A]/10 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-[#B8593A]">
+            Sanación Sistémica
+          </p>
+          <h1 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl md:text-6xl mb-6">
+            Constelaciones y Reprogramación Emocional
+          </h1>
+          <p className="text-base leading-relaxed text-[#5C3522]/75 sm:text-lg">
+            En mi trabajo integro diferentes herramientas terapéuticas para acompañarte a encontrar
+            la raíz de aquello que hoy genera bloqueo, dolor o repetición en tu vida.
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <img
+            src={arbolLibroImg}
+            alt="Árbol de la vida"
+            className="w-full max-w-[340px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 animate-float"
+          />
+        </div>
       </section>
 
       {/* Cards */}

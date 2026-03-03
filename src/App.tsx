@@ -1,17 +1,17 @@
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-  return null;
-}
 import CartaAstral from "./pages/CartaAstral";
 import Constelaciones from "./pages/Constelaciones";
 import RevolucionSolar from "./pages/RevolucionSolar";
 import TarotEvolutivo from "./pages/TarotEvolutivo";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
 // @ts-ignore
 import cartaAstralImg from "./assets/carta-astral.jpeg";
 
