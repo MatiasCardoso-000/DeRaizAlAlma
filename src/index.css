@@ -17,25 +17,41 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Nunito Sans", sans-serif;
-  background: #071730; /* navy profundo */
+  background: radial-gradient(ellipse at 10% 10%, #081427 0%, #031022 30%, #01101a 100%);
   color: #F6E9D6; /* texto por defecto: crema clara para buen contraste */
 }
 
 /* ───── Fondo terroso orgánico ───── */
 .fondo-terroso {
   background:
-    radial-gradient(70rem 40rem at 82% 12%, rgba(196,120,74,0.06), transparent 60%),
-    radial-gradient(45rem 28rem at 10% 22%, rgba(139,154,123,0.04), transparent 62%),
-    radial-gradient(circle at 30% 70%, rgba(196,120,74,0.03), transparent 50%),
-    #FAFAFA; /* fondo original */
+    radial-gradient(60rem 30rem at 85% 10%, rgba(212,169,90,0.04), transparent 50%),
+    radial-gradient(40rem 24rem at 10% 20%, rgba(60,90,130,0.04), transparent 50%),
+    linear-gradient(180deg, rgba(7,23,48,1) 0%, rgba(6,18,40,1) 100%);
+
+/* Estrellas sutiles sobre el fondo */
+.fondo-terroso::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(246,233,214,0.95) 1px, transparent 1px),
+    radial-gradient(circle, rgba(246,233,214,0.6) 0.8px, transparent 0.8px);
+  background-size: 180px 180px, 60px 60px;
+  opacity: 0.55;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
     /* Cambiado a un fondo más oscuro */
 }
 
 /* ───── Card orgánica ───── */
 .alma-card {
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,250,0.99)),
-    radial-gradient(circle at 20% 10%, rgba(196,120,74,0.03), transparent 42%);
+    linear-gradient(180deg, rgba(246,233,214,0.98), rgba(255,249,241,0.99));
+  color: #071730; /* texto oscuro dentro de cards */
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 30px rgba(7,23,48,0.12);
+  border: 1px solid rgba(246,233,214,0.18); /* borde crema */
   backdrop-filter: blur(4px);
   color: #071730; /* texto oscuro dentro de cards */
 }
@@ -46,7 +62,7 @@ body {
   aspect-ratio: 1 / 1;
   border-radius: 9999px;
   position: relative;
-  border: 2px solid rgba(196,120,74,0.5);
+  border: 2px solid rgba(246,233,214,0.12); /* borde crema sutil */
   box-shadow:
     inset 0 0 0 16px rgba(250,250,250,0.8),
     inset 0 0 0 17px rgba(196,120,74,0.25),
@@ -76,7 +92,8 @@ body {
 
 /* ───── Botón primario ───── */
 .btn-terracota {
-  @apply rounded-full bg-gradient-to-r from-terracota to-oro px-7 py-3 text-sm font-bold uppercase tracking-[0.17em] text-texto shadow-warm transition;
+  @apply rounded-full bg-gradient-to-r from-terracota to-oro px-7 py-3 text-sm font-bold uppercase tracking-[0.17em] text-crema shadow-warm transition;
+  border: 1px solid rgba(246,233,214,0.08);
 }
 .btn-terracota:hover {
   filter: brightness(1.1);
@@ -86,6 +103,7 @@ body {
 /* ───── Botón secundario ───── */
 .btn-sage {
   @apply rounded-full border-2 border-oro bg-arena px-7 py-3 text-sm font-bold uppercase tracking-[0.17em] text-texto transition;
+  border-color: rgba(246,233,214,0.18);
 }
 .btn-sage:hover {
   @apply bg-sage/10 border-sage;
