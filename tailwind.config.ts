@@ -5,13 +5,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        tierra: "#1A1209",
+        tierra: "#FAFAFA",
         terracota: "#C4784A",
-        arena: "#E8CEB0",
-        crema: "#FAF3EB",
+        arena: "#3F3F46",
+        crema: "#27272A",
         sage: "#8B9A7B",
-        marron: "#2A1810",
-        caoba: "#3D2417",
+        marron: "#E4E4E7",
+        caoba: "#D4D4D8",
       },
       boxShadow: {
         aura: "0 0 0 1px rgba(196,120,74,0.2), 0 0 42px rgba(139,154,123,0.15)",

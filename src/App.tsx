@@ -65,23 +65,10 @@ function Home() {
           </div>
         </section>
 
-        <section className="alma-card rounded-[2rem] border border-terracota/25 p-8 shadow-aura animate-fade-in-up">
-          <div className="mb-6 flex items-center gap-4">
-            <div className="h-11 w-11 rounded-full border border-terracota/50 bg-tierra flex items-center justify-center text-xl">
-              🌿
-            </div>
-            <div>
-              <p className="font-serifDisplay text-2xl text-terracota">Carta Astral</p>
-              <p className="text-sm text-arena/70">Lectura personalizada</p>
-            </div>
-          </div>
-
-          <div className="constelacion-wheel mx-auto mb-7 animate-pulse-glow" />
-
+        
           <p className="text-center text-sm leading-relaxed text-arena/80 italic font-serifDisplay">
             "Cuando una persona constela, sana todo su linaje".
           </p>
-        </section>
       </main>
 
       <div className="organic-divider mx-6 md:mx-10" />

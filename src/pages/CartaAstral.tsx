@@ -41,18 +41,21 @@ export default function CartaAstral() {
         <Header />
 
         <main className="mx-auto w-full max-w-6xl px-6 py-12 md:px-10">
-          <section className="mb-16 text-center max-w-3xl mx-auto animate-fade-in-up">
-            <p className="mb-4 inline-block rounded-full border border-terracota/40 bg-marron/70 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-terracota">
-              Conocimiento Milenario
-            </p>
-            <h1 className="font-serifDisplay text-4xl text-crema sm:text-5xl md:text-6xl mb-6">
-              La Carta Astral
-            </h1>
-            <p className="text-base leading-relaxed text-arena/85 sm:text-lg">
-              También conocida como mapa natal, es un diagrama que representa las posiciones
-              planetarias en el momento exacto de tu nacimiento. Es una guía para entender
-              tus dones, desafíos y el propósito de tu alma en esta tierra.
-            </p>
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="animate-fade-in-up">
+              <p className="mb-4 inline-block rounded-full border border-terracota/40 bg-marron/30 px-4 py-1 text-xs font-bold uppercase tracking-[0.22em] text-terracota">
+                Conocimiento Milenario
+              </p>
+              <h1 className="font-serifDisplay text-4xl text-crema sm:text-5xl md:text-6xl mb-6">
+                La Carta Astral
+              </h1>
+              <p className="text-base leading-relaxed text-arena/85 sm:text-lg">
+                También conocida como mapa natal, es un diagrama que representa las posiciones
+                planetarias en el momento exacto de tu nacimiento. Es una guía para entender
+                tus dones, desafíos y el propósito de tu alma en esta tierra.
+              </p>
+            </div>
+            
           </section>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
