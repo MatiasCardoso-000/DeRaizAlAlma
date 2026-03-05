@@ -108,7 +108,7 @@ function Home() {
               alt="Carta Astral"
               decoding="async"
               fetchPriority="high"
-              className="animate-float relative w-full max-w-[150px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 md:max-w-[360px]"
+              className="animate-float relative w-full max-w-[300px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 md:max-w-[360px]"
             />
           </div>
           <p className="text-center text-3xl leading-relaxed text-[#5C3522]/65 font-body max-w-xs">

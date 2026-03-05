@@ -27,7 +27,7 @@ export default function Header() {
               alt="De Raíz al Alma"
               decoding="async"
               fetchPriority="high"
-              className="h-24 w-24 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-32 md:w-32"
+              className="h-40 w-40 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-40 md:w-40"
             />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
