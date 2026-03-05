@@ -58,9 +58,6 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <a href={WA_URL} target="_blank" rel="noreferrer" className="hidden lg:block btn-verde">
-            Agendar Sesión
-          </a>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden flex flex-col gap-1.5 p-1"
