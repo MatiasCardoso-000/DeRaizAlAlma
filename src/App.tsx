@@ -84,9 +84,9 @@ function Home() {
             <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde text-center">
               Reservar Turno
             </a>
-            <Link to="/carta-astral" className="btn-sage text-center flex items-center justify-center">
+            <a href="#sesiones-disponibles" className="btn-sage text-center flex items-center justify-center">
               Ver Servicios
-            </Link>
+            </a>
           </div>
           <div className="mt-8 flex flex-wrap gap-x-5 gap-y-1 text-[0.65rem] uppercase tracking-[0.18em] text-[#5C3522]/45 font-semibold">
             <span>Online & Presencial</span>
@@ -120,7 +120,7 @@ function Home() {
       <div className="organic-divider mx-6 md:mx-10" />
 
       {/* ── Sesiones disponibles ──────────────────────────────── */}
-      <section className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10">
+      <section id="sesiones-disponibles" className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10">
         <div className="mb-12 text-center">
           <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] font-semibold">
             Explora tu camino
