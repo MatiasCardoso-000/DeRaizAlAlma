@@ -108,10 +108,10 @@ function Home() {
               alt="Carta Astral"
               decoding="async"
               fetchPriority="high"
-              className="animate-float relative w-full max-w-[300px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 md:max-w-[360px]"
+              className="animate-float relative w-full max-w-[150px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 md:max-w-[360px]"
             />
           </div>
-          <p className="text-center text-3xl leading-relaxed text-[#5C3522]/65 italic font-serifDisplay max-w-xs">
+          <p className="text-center text-3xl leading-relaxed text-[#5C3522]/65 font-body max-w-xs">
             "Cuando una persona constela, sana todo su linaje."
           </p>
         </div>
@@ -156,7 +156,7 @@ function Home() {
 
       {/* ── Quote Banner ─────────────────────────────────────── */}
       <section className="quote-banner py-20 px-6 md:px-10 text-center">
-        <p className="font-serifDisplay text-4xl sm:text-5xl md:text-6xl text-[#B8593A] max-w-3xl mx-auto leading-tight">
+        <p className="font-body text-4xl sm:text-5xl md:text-6xl text-[#B8593A] max-w-3xl mx-auto leading-tight">
           "El alma siempre sabe el camino.<br className="hidden sm:block" /> Solo necesita ser escuchada."
         </p>
         <p className="mt-6 text-[0.65rem] uppercase tracking-[0.24em] text-[#5C3522]/40 font-semibold">
