@@ -111,7 +111,7 @@ function Home() {
               className="animate-float relative w-full max-w-[300px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 md:max-w-[360px]"
             />
           </div>
-          <p className="text-center text-sm leading-relaxed text-[#5C3522]/65 italic font-serifDisplay max-w-xs">
+          <p className="text-center text-3xl leading-relaxed text-[#5C3522]/65 italic font-serifDisplay max-w-xs">
             "Cuando una persona constela, sana todo su linaje."
           </p>
         </div>
