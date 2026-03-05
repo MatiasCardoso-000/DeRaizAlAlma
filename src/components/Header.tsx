@@ -27,12 +27,12 @@ export default function Header() {
               alt="De Raíz al Alma"
               decoding="async"
               fetchPriority="high"
-              className="h-16 w-16 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-24 md:w-24"
+              className="h-20 w-20 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-32 md:w-32"
             />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
-            <span className="font-body text-3xl text-[#5C3522]">De Raíz al Alma</span>
-            <span className="text-[0.6rem] uppercase tracking-[0.22em] text-[#8A7A6E] font-semibold whitespace-nowrap">
+            <span className="font-body text-4xl md:text-5xl text-[#5C3522]">De Raíz al Alma</span>
+            <span className="text-[0.65rem] md:text-[0.75rem] uppercase tracking-[0.22em] text-[#8A7A6E] font-semibold whitespace-nowrap">
               Constelaciones · Tarot · Astrología
             </span>
           </div>
