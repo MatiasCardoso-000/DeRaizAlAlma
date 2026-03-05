@@ -76,7 +76,7 @@ function Home() {
             Guía cósmica para
             <span className="block text-[#B8593A]">volver a tu centro</span>
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-[#5C3522]/80 sm:text-lg">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#5C3522]/80 sm:text-xl md:text-xl">
             Un espacio cálido y espiritual para leer tu energía, ordenar tu sistema
             y crear un nuevo camino con conciencia.
           </p>
@@ -125,7 +125,7 @@ function Home() {
           <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] font-semibold">
             Explora tu camino
           </p>
-          <h2 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl">Sesiones disponibles</h2>
+          <h2 className="font-serifDisplay text-5xl text-[#3A2415] sm:text-6xl">Sesiones disponibles</h2>
           <p className="mt-2 text-xs uppercase tracking-[0.16em] text-[#5C3522]/45 font-semibold">
             Modalidad online y presencial
           </p>
@@ -141,10 +141,10 @@ function Home() {
               <div className="mb-4 flex h-13 w-13 items-center justify-center rounded-full bg-[#B8593A]/8 text-2xl group-hover:bg-[#B8593A]/15 transition-colors" style={{ width: 52, height: 52 }}>
                 {servicio.icono}
               </div>
-              <h3 className="font-serifDisplay text-2xl text-[#3A2415] group-hover:text-[#B8593A] transition-colors">
+              <h3 className="font-serifDisplay text-3xl md:text-3xl text-[#3A2415] group-hover:text-[#B8593A] transition-colors">
                 {servicio.titulo}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-[#5C3522]/70">{servicio.descripcion}</p>
+              <p className="mt-3 text-base md:text-base leading-relaxed text-[#5C3522]/70">{servicio.descripcion}</p>
               <span className="mt-4 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-[#B8593A]/70 group-hover:text-[#B8593A] transition-colors">
                 Explorar
                 <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
