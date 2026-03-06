@@ -123,7 +123,7 @@ export default function Constelaciones() {
 
       {/* ── Herramientas ──────────────────────────────────────── */}
       <section className="mb-20 animate-fade-in-up" style={{ animationDelay: "0.18s" }}>
-        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">El método</p>
+        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-black dark:text-[#888888] font-semibold transition-colors">El método</p>
         <h2 className="font-serifDisplay text-3xl text-[#3A2415] dark:text-white sm:text-4xl mb-10 transition-colors">Herramientas que integro</h2>
 
         <div className="grid gap-6 md:grid-cols-3">
@@ -154,7 +154,7 @@ export default function Constelaciones() {
       {/* ── CTA ───────────────────────────────────────────────── */}
       <section className="animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
         <div className="alma-card mx-auto max-w-3xl rounded-2xl p-10 md:p-14">
-          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
+          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-black dark:text-[#888888] font-semibold transition-colors">
             Sesión individual
           </p>
           <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-[#FFB89A] mb-4 transition-colors">¿Sentís que es tu momento?</h2>
