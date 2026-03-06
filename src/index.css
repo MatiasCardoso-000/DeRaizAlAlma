@@ -152,13 +152,13 @@ html.dark .alma-card:hover {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   letter-spacing: 0.05em;
-  color: #5C3522;
+  color: #000000;
   border: 2px solid rgba(92,53,34,0.38);
   transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
   cursor: pointer;
   text-decoration: none;
 }
-.btn-sage:hover { background: rgba(92,53,34,0.07); border-color: #B8593A; color: #9C4A2E; }
+.btn-sage:hover { background: rgba(92,53,34,0.07); border-color: #B8593A; color: #B8593A; }
 
 html.dark .btn-sage {
   color: #e0e0e0;

@@ -130,10 +130,10 @@ export default function CartaAstral() {
           <h1 className="font-serifDisplay text-5xl leading-tight text-[#3A2415] dark:text-white sm:text-6xl md:text-7xl mb-6 transition-colors">
             La Carta Astral
           </h1>
-          <p className="text-base leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] sm:text-lg mb-2 transition-colors">
+          <p className="text-base leading-relaxed text-black/75 dark:text-[#cccccc] sm:text-lg mb-2 transition-colors">
             El mapa de tu alma al momento de tu nacimiento.
           </p>
-          <p className="text-base leading-relaxed text-[#5C3522]/60 dark:text-[#b3b3b3] sm:text-lg transition-colors">
+          <p className="text-base leading-relaxed text-black/60 dark:text-[#b3b3b3] sm:text-lg transition-colors">
             No es un destino fijo, sino una guía de conciencia.
           </p>
         </div>
@@ -151,7 +151,7 @@ export default function CartaAstral() {
           >
             "
           </span>
-          <p className="font-serifDisplay text-2xl sm:text-3xl text-[#5C3522] dark:text-[#e0e0e0] leading-relaxed -mt-8 transition-colors">
+          <p className="font-serifDisplay text-2xl sm:text-3xl text-black dark:text-[#e0e0e0] leading-relaxed -mt-8 transition-colors">
             A través de tu carta exploramos quién sos, por qué vivís lo que vivís
             y hacia dónde puede ir tu alma.
           </p>
@@ -188,7 +188,7 @@ export default function CartaAstral() {
                   {item.icono}
                 </div>
                 <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{item.titulo}</h3>
-                <p className="text-sm leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] transition-colors">{item.descripcion}</p>
+                <p className="text-sm leading-relaxed text-black/75 dark:text-[#cccccc] transition-colors">{item.descripcion}</p>
               </div>
             </article>
           ))}
@@ -211,7 +211,7 @@ export default function CartaAstral() {
               >
                 <div className="mb-3 text-2xl">{d.icono}</div>
                 <p className="mb-1 text-sm font-semibold text-[#3A2415] dark:text-white transition-colors">{d.label}</p>
-                <p className="text-xs leading-relaxed text-[#5C3522]/60 dark:text-[#999999] transition-colors">{d.sub}</p>
+                <p className="text-xs leading-relaxed text-black/60 dark:text-[#999999] transition-colors">{d.sub}</p>
               </div>
             ))}
           </div>

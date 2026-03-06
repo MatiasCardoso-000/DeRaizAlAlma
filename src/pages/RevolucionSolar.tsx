@@ -89,7 +89,7 @@ export default function RevolucionSolar() {
           <h1 className="font-serifDisplay text-5xl leading-tight text-[#3A2415] dark:text-white sm:text-6xl md:text-7xl mb-6 transition-colors">
             Revolución Solar
           </h1>
-          <p className="text-base leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] sm:text-lg transition-colors">
+          <p className="text-base leading-relaxed text-black/75 dark:text-[#cccccc] sm:text-lg transition-colors">
             El mapa energético de tu año personal, desde un cumpleaños al siguiente.
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function RevolucionSolar() {
       <section className="mb-20 text-center animate-fade-in-up" style={{ animationDelay: "0.12s" }}>
         <div className="relative mx-auto max-w-2xl">
           <span className="font-serifDisplay block text-8xl leading-none text-[#B8593A]/15 select-none" aria-hidden="true">"</span>
-          <p className="font-serifDisplay text-2xl sm:text-3xl text-[#5C3522] dark:text-[#cccccc] leading-relaxed -mt-8 transition-colors">
+          <p className="font-serifDisplay text-2xl sm:text-3xl text-black dark:text-[#cccccc] leading-relaxed -mt-8 transition-colors">
             Es una herramienta de claridad y dirección para que tu año
             no pase por vos… sino que lo vivas de manera activa y consciente.
           </p>
@@ -130,7 +130,7 @@ export default function RevolucionSolar() {
                   {a.icono}
                 </div>
                 <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{a.titulo}</h3>
-                <p className="text-sm leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] transition-colors">{a.descripcion}</p>
+                <p className="text-sm leading-relaxed text-black/75 dark:text-[#cccccc] transition-colors">{a.descripcion}</p>
               </div>
             </article>
           ))}
@@ -154,7 +154,7 @@ export default function RevolucionSolar() {
                 {p.icono}
               </div>
               <h3 className="font-semibold text-[#3A2415] dark:text-white text-sm tracking-wide transition-colors">{p.titulo}</h3>
-              <p className="text-xs text-[#5C3522]/60 dark:text-[#aaaaaa] leading-relaxed max-w-[190px] transition-colors">{p.desc}</p>
+              <p className="text-xs text-black/60 dark:text-[#aaaaaa] leading-relaxed max-w-[190px] transition-colors">{p.desc}</p>
             </div>
           ))}
         </div>
@@ -167,7 +167,7 @@ export default function RevolucionSolar() {
             ¿Ya se acerca tu cumpleaños?
           </p>
           <h2 className="font-serifDisplay text-3xl text-[#3A2415] dark:text-white mb-4 transition-colors">Encargá tu Revolución Solar</h2>
-          <p className="text-[#5C3522]/65 dark:text-[#aaaaaa] text-sm max-w-sm mx-auto mb-8 leading-relaxed transition-colors">
+          <p className="text-black/65 dark:text-[#aaaaaa] text-sm max-w-sm mx-auto mb-8 leading-relaxed transition-colors">
             Viví este ciclo con intención. Tu próximo año empieza con conciencia.
           </p>
           <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">
