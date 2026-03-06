@@ -134,7 +134,7 @@ export default function TarotEvolutivo() {
                 {c.num}
               </span>
               <div className="relative z-10">
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 text-xl transition-colors group-hover:bg-[#B8593A]/18">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-xl transition-colors group-hover:bg-[#B8593A]/18 dark:group-hover:bg-[#B8593A]/25">
                   {c.icono}
                 </div>
                 <h3 className="font-serifDisplay text-2xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{c.titulo}</h3>

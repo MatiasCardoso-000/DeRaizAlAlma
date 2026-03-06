@@ -126,7 +126,7 @@ export default function RevolucionSolar() {
                 {a.num}
               </span>
               <div className="relative z-10">
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 text-xl transition-colors group-hover:bg-[#B8593A]/18">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-xl transition-colors group-hover:bg-[#B8593A]/18 dark:group-hover:bg-[#B8593A]/25">
                   {a.icono}
                 </div>
                 <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{a.titulo}</h3>
@@ -150,7 +150,7 @@ export default function RevolucionSolar() {
               className="flex flex-col items-center gap-3 animate-fade-in-up"
               style={{ animationDelay: `${0.36 + i * 0.08}s` }}
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#B8593A]/10 text-2xl">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-2xl transition-colors">
                 {p.icono}
               </div>
               <h3 className="font-semibold text-[#3A2415] dark:text-white text-sm tracking-wide transition-colors">{p.titulo}</h3>
