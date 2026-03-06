@@ -137,7 +137,7 @@ export default function TarotEvolutivo() {
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-xl transition-colors group-hover:bg-[#B8593A]/18 dark:group-hover:bg-[#B8593A]/25">
                   {c.icono}
                 </div>
-                <h3 className="font-serifDisplay text-2xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{c.titulo}</h3>
+                <h3 className="font-serifDisplay text-2xl text-[#B8593A] dark:text-black mb-3 transition-colors">{c.titulo}</h3>
                 <p className="text-sm leading-relaxed text-black/75 dark:text-[#cccccc] transition-colors">{c.descripcion}</p>
               </div>
             </article>
@@ -148,7 +148,7 @@ export default function TarotEvolutivo() {
       {/* ── CTA ───────────────────────────────────────────────── */}
       <section className="animate-fade-in-up" style={{ animationDelay: "0.38s" }}>
         <div className="cta-final mx-auto max-w-3xl rounded-2xl p-10 md:p-14 text-center">
-          <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-[#FFB89A] mb-4 transition-colors">
+          <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-black mb-4 transition-colors">
             ¿Qué te dice tu inconsciente?
           </h2>
           <p className="text-black/70 dark:text-[#aaaaaa] text-sm max-w-sm mx-auto mb-8 leading-relaxed transition-colors">

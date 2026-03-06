@@ -143,7 +143,7 @@ export default function Constelaciones() {
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-xl transition-colors group-hover:bg-[#B8593A]/18 dark:group-hover:bg-[#B8593A]/25">
                   {h.icono}
                 </div>
-                <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{h.titulo}</h3>
+                <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-black mb-3 transition-colors">{h.titulo}</h3>
                 <p className="text-sm leading-relaxed text-black/75 dark:text-[#cccccc] transition-colors">{h.descripcion}</p>
               </div>
             </article>
@@ -157,7 +157,7 @@ export default function Constelaciones() {
           <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-black dark:text-[#888888] font-semibold transition-colors">
             Sesión individual
           </p>
-          <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-[#FFB89A] mb-4 transition-colors">¿Sentís que es tu momento?</h2>
+          <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-black mb-4 transition-colors">¿Sentís que es tu momento?</h2>
           <p className="text-xs font-bold uppercase tracking-[0.20em] text-[#B8593A]/55 dark:text-[#FFB89A]/70 mb-8 transition-colors">
             Virtual o presencial · A tu ritmo
           </p>
