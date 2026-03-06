@@ -80,10 +80,10 @@ export default function NotFound() {
 
         <p className="badge-cosmica mb-5 -mt-2">Página no encontrada</p>
 
-        <h1 className="font-serifDisplay text-4xl text-[#3A2415] sm:text-5xl mb-4 leading-tight">
+        <h1 className="font-serifDisplay text-4xl text-[#3A2415] dark:text-white sm:text-5xl mb-4 leading-tight transition-colors">
           Te perdiste en el camino
         </h1>
-        <p className="text-base text-[#5C3522]/65 max-w-sm mb-10 leading-relaxed">
+        <p className="text-base text-[#5C3522]/65 dark:text-[#aaaaaa] max-w-sm mb-10 leading-relaxed transition-colors">
           No hay nada aquí, pero hay mucho por descubrir. Volvé al inicio y encontrá tu camino.
         </p>
 

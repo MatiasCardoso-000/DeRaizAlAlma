@@ -89,10 +89,10 @@ export default function TarotEvolutivo() {
 
         <div className="relative z-10 max-w-xl">
           <p className="badge-cosmica mb-6">Conciencia y Evolución</p>
-          <h1 className="font-serifDisplay text-5xl leading-tight text-[#3A2415] sm:text-6xl md:text-7xl mb-6">
+          <h1 className="font-serifDisplay text-5xl leading-tight text-[#3A2415] dark:text-white sm:text-6xl md:text-7xl mb-6 transition-colors">
             Tarot Evolutivo
           </h1>
-          <p className="text-base leading-relaxed text-[#5C3522]/75 sm:text-lg">
+          <p className="text-base leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] sm:text-lg transition-colors">
             Una herramienta terapéutica centrada en tu crecimiento personal.
             A través de arquetipos, exploramos el inconsciente para comprender
             procesos internos y tomar decisiones conscientes.
@@ -104,7 +104,7 @@ export default function TarotEvolutivo() {
       <section className="mb-20 text-center animate-fade-in-up" style={{ animationDelay: "0.12s" }}>
         <div className="relative mx-auto max-w-2xl">
           <span className="font-serifDisplay block text-8xl leading-none text-[#B8593A]/15 select-none" aria-hidden="true">"</span>
-          <p className="font-serifDisplay text-2xl sm:text-3xl text-[#5C3522] leading-relaxed -mt-8">
+          <p className="font-serifDisplay text-2xl sm:text-3xl text-[#5C3522] dark:text-[#cccccc] leading-relaxed -mt-8 transition-colors">
             El tarot no predice tu destino. Te ayuda a crearlo.
           </p>
           <div className="mt-8 h-px w-20 bg-gradient-to-r from-transparent via-[#B8593A]/35 to-transparent mx-auto" />
@@ -113,10 +113,10 @@ export default function TarotEvolutivo() {
 
       {/* ── Claves ────────────────────────────────────────────── */}
       <section className="mb-20 animate-fade-in-up" style={{ animationDelay: "0.18s" }}>
-        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] font-semibold">
+        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
           Por qué es diferente
         </p>
-        <h2 className="font-serifDisplay text-3xl text-[#3A2415] sm:text-4xl mb-10">
+        <h2 className="font-serifDisplay text-3xl text-[#3A2415] dark:text-white sm:text-4xl mb-10 transition-colors">
           Pilares del Tarot Evolutivo
         </h2>
 
@@ -137,8 +137,8 @@ export default function TarotEvolutivo() {
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 text-xl transition-colors group-hover:bg-[#B8593A]/18">
                   {c.icono}
                 </div>
-                <h3 className="font-serifDisplay text-2xl text-[#B8593A] mb-3">{c.titulo}</h3>
-                <p className="text-sm leading-relaxed text-[#5C3522]/75">{c.descripcion}</p>
+                <h3 className="font-serifDisplay text-2xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{c.titulo}</h3>
+                <p className="text-sm leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] transition-colors">{c.descripcion}</p>
               </div>
             </article>
           ))}
@@ -148,10 +148,10 @@ export default function TarotEvolutivo() {
       {/* ── CTA ───────────────────────────────────────────────── */}
       <section className="animate-fade-in-up" style={{ animationDelay: "0.38s" }}>
         <div className="cta-final mx-auto max-w-3xl rounded-2xl p-10 md:p-14 text-center">
-          <h2 className="font-serifDisplay text-3xl text-[#B8593A] mb-4">
+          <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-[#FFB89A] mb-4 transition-colors">
             ¿Qué te dice tu inconsciente?
           </h2>
-          <p className="text-[#5C3522]/70 text-sm max-w-sm mx-auto mb-8 leading-relaxed">
+          <p className="text-[#5C3522]/70 dark:text-[#aaaaaa] text-sm max-w-sm mx-auto mb-8 leading-relaxed transition-colors">
             Descubrí las llaves que ya tenés para abrir las puertas de tu evolución.
           </p>
           <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">

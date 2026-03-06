@@ -84,10 +84,10 @@ export default function Constelaciones() {
         <div className="relative z-10 grid md:grid-cols-2 md:items-center gap-10">
           <div>
             <p className="badge-cosmica mb-6">Sanación Sistémica</p>
-            <h1 className="font-serifDisplay text-5xl leading-tight text-[#3A2415] sm:text-6xl md:text-5xl lg:text-6xl mb-6">
-              Constelaciones y<span className="block text-[#B8593A]">Reprogramación</span>
+            <h1 className="font-serifDisplay text-5xl leading-tight text-[#3A2415] dark:text-white sm:text-6xl md:text-5xl lg:text-6xl mb-6 transition-colors">
+              Constelaciones y<span className="block text-[#B8593A] dark:text-[#FFB89A]">Reprogramación</span>
             </h1>
-            <p className="text-base leading-relaxed text-[#5C3522]/75 sm:text-lg">
+            <p className="text-base leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] sm:text-lg transition-colors">
               Integro diferentes herramientas terapéuticas para acompañarte a encontrar
               la raíz de aquello que hoy genera bloqueo, dolor o repetición en tu vida.
             </p>
@@ -113,7 +113,7 @@ export default function Constelaciones() {
       <section className="mb-20 text-center animate-fade-in-up" style={{ animationDelay: "0.12s" }}>
         <div className="relative mx-auto max-w-2xl">
           <span className="font-serifDisplay block text-8xl leading-none text-[#B8593A]/15 select-none" aria-hidden="true">"</span>
-          <p className="font-serifDisplay text-2xl sm:text-3xl text-[#5C3522] leading-relaxed -mt-8">
+          <p className="font-serifDisplay text-2xl sm:text-3xl text-[#5C3522] dark:text-[#cccccc] leading-relaxed -mt-8 transition-colors">
             Este proceso no busca borrar el pasado, sino integrarlo
             desde un lugar más consciente y amoroso.
           </p>
@@ -123,8 +123,8 @@ export default function Constelaciones() {
 
       {/* ── Herramientas ──────────────────────────────────────── */}
       <section className="mb-20 animate-fade-in-up" style={{ animationDelay: "0.18s" }}>
-        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] font-semibold">El método</p>
-        <h2 className="font-serifDisplay text-3xl text-[#3A2415] sm:text-4xl mb-10">Herramientas que integro</h2>
+        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">El método</p>
+        <h2 className="font-serifDisplay text-3xl text-[#3A2415] dark:text-white sm:text-4xl mb-10 transition-colors">Herramientas que integro</h2>
 
         <div className="grid gap-6 md:grid-cols-3">
           {herramientas.map((h, i) => (
@@ -143,8 +143,8 @@ export default function Constelaciones() {
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 text-xl transition-colors group-hover:bg-[#B8593A]/18">
                   {h.icono}
                 </div>
-                <h3 className="font-serifDisplay text-xl text-[#B8593A] mb-3">{h.titulo}</h3>
-                <p className="text-sm leading-relaxed text-[#5C3522]/75">{h.descripcion}</p>
+                <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{h.titulo}</h3>
+                <p className="text-sm leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] transition-colors">{h.descripcion}</p>
               </div>
             </article>
           ))}
@@ -154,11 +154,11 @@ export default function Constelaciones() {
       {/* ── CTA ───────────────────────────────────────────────── */}
       <section className="animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
         <div className="alma-card mx-auto max-w-3xl rounded-2xl p-10 md:p-14">
-          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] font-semibold">
+          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
             Sesión individual
           </p>
-          <h2 className="font-serifDisplay text-3xl text-[#B8593A] mb-4">¿Sentís que es tu momento?</h2>
-          <p className="text-xs font-bold uppercase tracking-[0.20em] text-[#B8593A]/55 mb-8">
+          <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-[#FFB89A] mb-4 transition-colors">¿Sentís que es tu momento?</h2>
+          <p className="text-xs font-bold uppercase tracking-[0.20em] text-[#B8593A]/55 dark:text-[#FFB89A]/70 mb-8 transition-colors">
             Virtual o presencial · A tu ritmo
           </p>
           <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">

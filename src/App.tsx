@@ -46,7 +46,7 @@ function StarDot({ style }: { style: React.CSSProperties }) {
 
 function Home() {
   return (
-    <div className="fondo-terroso relative overflow-hidden text-[#3A2415]">
+    <div className="fondo-terroso relative overflow-hidden text-[#3A2415] dark:text-white transition-colors">
       {/* Decoraciones celestes de fondo */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute -right-40 -top-40 h-[600px] w-[600px] rounded-full border border-[#B8593A]/8" />
@@ -88,7 +88,7 @@ function Home() {
               Ver Servicios
             </a>
           </div>
-          <div className="mt-8 flex flex-wrap gap-x-5 gap-y-1 text-[0.65rem] uppercase tracking-[0.18em] text-[#5C3522]/45 font-semibold">
+          <div className="mt-8 flex flex-wrap gap-x-5 gap-y-1 text-[0.65rem] uppercase tracking-[0.18em] text-[#5C3522]/45 dark:text-[#888888] font-semibold transition-colors">
             <span>Online & Presencial</span>
             <span aria-hidden="true">·</span>
             <span>Sesiones Individuales</span>
@@ -111,7 +111,7 @@ function Home() {
               className="animate-float relative w-full max-w-[150px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 md:max-w-[360px]"
             />
           </div>
-          <p className="text-center text-3xl leading-relaxed text-[#5C3522]/65 font-body max-w-xs">
+          <p className="text-center text-3xl leading-relaxed text-[#5C3522]/65 dark:text-[#b3b3b3] font-body max-w-xs transition-colors">
             "Cuando una persona constela, sana todo su linaje."
           </p>
         </div>

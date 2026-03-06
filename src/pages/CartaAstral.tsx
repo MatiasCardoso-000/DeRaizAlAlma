@@ -127,13 +127,13 @@ export default function CartaAstral() {
 
         <div className="relative z-10 max-w-xl">
           <p className="badge-cosmica mb-6">Conocimiento Milenario</p>
-          <h1 className="font-serifDisplay text-5xl leading-tight text-[#3A2415] sm:text-6xl md:text-7xl mb-6">
+          <h1 className="font-serifDisplay text-5xl leading-tight text-[#3A2415] dark:text-white sm:text-6xl md:text-7xl mb-6 transition-colors">
             La Carta Astral
           </h1>
-          <p className="text-base leading-relaxed text-[#5C3522]/75 sm:text-lg mb-2">
+          <p className="text-base leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] sm:text-lg mb-2 transition-colors">
             El mapa de tu alma al momento de tu nacimiento.
           </p>
-          <p className="text-base leading-relaxed text-[#5C3522]/60 sm:text-lg">
+          <p className="text-base leading-relaxed text-[#5C3522]/60 dark:text-[#b3b3b3] sm:text-lg transition-colors">
             No es un destino fijo, sino una guía de conciencia.
           </p>
         </div>
@@ -151,7 +151,7 @@ export default function CartaAstral() {
           >
             "
           </span>
-          <p className="font-serifDisplay text-2xl sm:text-3xl text-[#5C3522] leading-relaxed -mt-8">
+          <p className="font-serifDisplay text-2xl sm:text-3xl text-[#5C3522] dark:text-[#e0e0e0] leading-relaxed -mt-8 transition-colors">
             A través de tu carta exploramos quién sos, por qué vivís lo que vivís
             y hacia dónde puede ir tu alma.
           </p>
@@ -161,10 +161,10 @@ export default function CartaAstral() {
 
       {/* ── Aspectos que exploramos ───────────────────────────── */}
       <section className="mb-20 animate-fade-in-up" style={{ animationDelay: "0.18s" }}>
-        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] font-semibold">
+        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
           Lo que descubrimos juntas
         </p>
-        <h2 className="font-serifDisplay text-3xl text-[#3A2415] sm:text-4xl mb-10">
+        <h2 className="font-serifDisplay text-3xl text-[#3A2415] dark:text-white sm:text-4xl mb-10 transition-colors">
           Aspectos que exploramos
         </h2>
 
@@ -184,11 +184,11 @@ export default function CartaAstral() {
               </span>
 
               <div className="relative z-10">
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 text-xl transition-colors group-hover:bg-[#B8593A]/18">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-xl transition-colors group-hover:bg-[#B8593A]/18 dark:group-hover:bg-[#B8593A]/25">
                   {item.icono}
                 </div>
-                <h3 className="font-serifDisplay text-xl text-[#B8593A] mb-3">{item.titulo}</h3>
-                <p className="text-sm leading-relaxed text-[#5C3522]/75">{item.descripcion}</p>
+                <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{item.titulo}</h3>
+                <p className="text-sm leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] transition-colors">{item.descripcion}</p>
               </div>
             </article>
           ))}
@@ -198,20 +198,20 @@ export default function CartaAstral() {
       {/* ── Qué necesitás ─────────────────────────────────────── */}
       <section className="animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
         <div className="alma-card mx-auto max-w-4xl rounded-2xl p-10 md:p-14">
-          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] font-semibold">
+          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
             Para calcularla
           </p>
-          <h2 className="font-serifDisplay text-3xl text-[#B8593A] mb-8">¿Qué necesitás?</h2>
+          <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-[#FFB89A] mb-8 transition-colors">¿Qué necesitás?</h2>
 
           <div className="mb-10 grid grid-cols-1 gap-5 sm:grid-cols-3">
             {requisitos.map((d) => (
               <div
                 key={d.label}
-                className="rounded-xl border border-[#B8593A]/15 bg-[#EDE0CF]/50 p-5"
+                className="rounded-xl border border-[#B8593A]/15 dark:border-[#B8593A]/25 bg-[#EDE0CF]/50 dark:bg-[#2a2a2a] p-5 transition-colors"
               >
                 <div className="mb-3 text-2xl">{d.icono}</div>
-                <p className="mb-1 text-sm font-semibold text-[#3A2415]">{d.label}</p>
-                <p className="text-xs leading-relaxed text-[#5C3522]/60">{d.sub}</p>
+                <p className="mb-1 text-sm font-semibold text-[#3A2415] dark:text-white transition-colors">{d.label}</p>
+                <p className="text-xs leading-relaxed text-[#5C3522]/60 dark:text-[#999999] transition-colors">{d.sub}</p>
               </div>
             ))}
           </div>
