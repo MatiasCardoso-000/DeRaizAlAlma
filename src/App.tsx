@@ -72,11 +72,11 @@ function Home() {
           <p className="badge-cosmica mb-6">
             Constelaciones · Tarot · Astrología
           </p>
-          <h1 className="font-serifDisplay text-6xl leading-tight text-[#3A2415] sm:text-7xl md:text-6xl lg:text-8xl">
+          <h1 className="font-serifDisplay text-6xl leading-tight text-[#3A2415] dark:text-white sm:text-7xl md:text-6xl lg:text-8xl transition-colors">
             Guía cósmica para
-            <span className="block text-[#B8593A]">volver a tu centro</span>
+            <span className="block text-[#B8593A] dark:text-[#FFB89A]">volver a tu centro</span>
           </h1>
-          <p className="mt-6 max-w-xl text-xl leading-relaxed text-[#5C3522]/80 sm:text-2xl md:text-2xl">
+          <p className="mt-6 max-w-xl text-xl leading-relaxed text-[#5C3522]/80 dark:text-[#cccccc] sm:text-2xl md:text-2xl transition-colors">
             Un espacio cálido y espiritual para leer tu energía, ordenar tu sistema
             y crear un nuevo camino con conciencia.
           </p>
@@ -84,9 +84,9 @@ function Home() {
             <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde text-center">
               Reservar Turno
             </a>
-            <Link to="/carta-astral" className="btn-sage text-center flex items-center justify-center">
+            <a href="#sesiones-disponibles" className="btn-sage text-center flex items-center justify-center">
               Ver Servicios
-            </Link>
+            </a>
           </div>
           <div className="mt-8 flex flex-wrap gap-x-5 gap-y-1 text-[0.65rem] uppercase tracking-[0.18em] text-[#5C3522]/45 font-semibold">
             <span>Online & Presencial</span>
@@ -120,13 +120,13 @@ function Home() {
       <div className="organic-divider mx-6 md:mx-10" />
 
       {/* ── Sesiones disponibles ──────────────────────────────── */}
-      <section className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10">
+      <section id="sesiones-disponibles" className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10">
         <div className="mb-12 text-center">
-          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] font-semibold">
+          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
             Explora tu camino
           </p>
-          <h2 className="font-serifDisplay text-6xl text-[#3A2415] sm:text-7xl">Sesiones disponibles</h2>
-          <p className="mt-2 text-xs uppercase tracking-[0.16em] text-[#5C3522]/45 font-semibold">
+          <h2 className="font-serifDisplay text-6xl text-[#3A2415] dark:text-white sm:text-7xl transition-colors">Sesiones disponibles</h2>
+          <p className="mt-2 text-xs uppercase tracking-[0.16em] text-[#5C3522]/45 dark:text-[#999999] font-semibold transition-colors">
             Modalidad online y presencial
           </p>
         </div>
@@ -135,17 +135,17 @@ function Home() {
             <Link
               to={servicio.link}
               key={servicio.titulo}
-              className="group alma-card rounded-xl border border-[#B8593A]/15 p-7 transition-all hover:-translate-y-1 hover:border-[#B8593A]/40 animate-fade-in-up"
+              className="group alma-card rounded-xl border border-[#B8593A]/15 p-7 transition-all hover:-translate-y-1 hover:border-[#B8593A]/40 animate-fade-in-up dark:border-[#B8593A]/25"
               style={{ animationDelay: `${i * 0.08}s` }}
             >
-              <div className="mb-4 flex h-13 w-13 items-center justify-center rounded-full bg-[#B8593A]/8 text-2xl group-hover:bg-[#B8593A]/15 transition-colors" style={{ width: 52, height: 52 }}>
+              <div className="mb-4 flex h-13 w-13 items-center justify-center rounded-full bg-[#B8593A]/8 dark:bg-[#B8593A]/15 text-2xl group-hover:bg-[#B8593A]/15 dark:group-hover:bg-[#B8593A]/25 transition-colors" style={{ width: 52, height: 52 }}>
                 {servicio.icono}
               </div>
-              <h3 className="font-serifDisplay text-4xl md:text-4xl text-[#3A2415] group-hover:text-[#B8593A] transition-colors">
+              <h3 className="font-serifDisplay text-4xl md:text-4xl text-[#3A2415] dark:text-white group-hover:text-[#B8593A] dark:group-hover:text-[#FFB89A] transition-colors">
                 {servicio.titulo}
               </h3>
-              <p className="mt-3 text-lg md:text-lg leading-relaxed text-[#5C3522]/70">{servicio.descripcion}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-[#B8593A]/70 group-hover:text-[#B8593A] transition-colors">
+              <p className="mt-3 text-lg md:text-lg leading-relaxed text-[#5C3522]/70 dark:text-[#cccccc]">{servicio.descripcion}</p>
+              <span className="mt-4 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-[#B8593A]/70 dark:text-[#FFB89A]/70 group-hover:text-[#B8593A] dark:group-hover:text-[#FFB89A] transition-colors">
                 Explorar
                 <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
               </span>
@@ -156,10 +156,10 @@ function Home() {
 
       {/* ── Quote Banner ─────────────────────────────────────── */}
       <section className="quote-banner py-20 px-6 md:px-10 text-center">
-        <p className="font-body text-4xl sm:text-5xl md:text-6xl text-[#B8593A] max-w-3xl mx-auto leading-tight">
+        <p className="font-body text-4xl sm:text-5xl md:text-6xl text-[#B8593A] dark:text-[#FFB89A] max-w-3xl mx-auto leading-tight transition-colors">
           "El alma siempre sabe el camino.<br className="hidden sm:block" /> Solo necesita ser escuchada."
         </p>
-        <p className="mt-6 text-[0.65rem] uppercase tracking-[0.24em] text-[#5C3522]/40 font-semibold">
+        <p className="mt-6 text-[0.65rem] uppercase tracking-[0.24em] text-[#5C3522]/40 dark:text-[#666666] font-semibold transition-colors">
           De Raíz al Alma
         </p>
       </section>
@@ -173,11 +173,11 @@ function Home() {
               className="flex flex-col items-center gap-3 animate-fade-in-up"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#B8593A]/10 text-3xl">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-3xl transition-colors">
                 {p.icono}
               </div>
-              <h3 className="font-semibold text-[#3A2415] tracking-wide text-sm">{p.titulo}</h3>
-              <p className="text-sm text-[#5C3522]/65 leading-relaxed max-w-[200px]">{p.desc}</p>
+              <h3 className="font-semibold text-[#3A2415] dark:text-white tracking-wide text-sm transition-colors">{p.titulo}</h3>
+              <p className="text-sm text-[#5C3522]/65 dark:text-[#999999] leading-relaxed max-w-[200px] transition-colors">{p.desc}</p>
             </div>
           ))}
         </div>
@@ -186,13 +186,13 @@ function Home() {
       {/* ── CTA Final ────────────────────────────────────────── */}
       <section className="mx-6 mb-16 md:mx-10">
         <div className="cta-final rounded-2xl p-10 md:p-14 text-center">
-          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#B8593A]/65 font-semibold">
+          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#B8593A]/65 dark:text-[#FFB89A]/65 font-semibold transition-colors">
             ¿Lista para comenzar?
           </p>
-          <h2 className="font-serifDisplay text-4xl md:text-5xl text-[#3A2415] mb-4">
+          <h2 className="font-serifDisplay text-4xl md:text-5xl text-[#3A2415] dark:text-white mb-4 transition-colors">
             Tu lectura te espera
           </h2>
-          <p className="text-[#5C3522]/70 text-sm max-w-md mx-auto mb-8 leading-relaxed">
+          <p className="text-[#5C3522]/70 dark:text-[#cccccc] text-sm max-w-md mx-auto mb-8 leading-relaxed transition-colors">
             Da el primer paso hacia tu transformación. Estoy aquí para acompañarte en cada etapa del camino.
           </p>
           <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">
@@ -208,7 +208,7 @@ function Home() {
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#FFE6F0] text-[#3A2415] selection:bg-[#B8593A]/25 font-body">
+    <div className="min-h-screen bg-[#FFE6F0] text-[#3A2415] selection:bg-[#B8593A]/25 font-body dark:bg-[#0a0a0a] dark:text-white dark:selection:bg-[#B8593A]/35 transition-colors">
       <ScrollToTop />
       <Routes>
         <Route path="/"                 element={<Home />} />
