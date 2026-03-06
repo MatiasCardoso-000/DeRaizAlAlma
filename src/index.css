@@ -12,6 +12,7 @@
 }
 
 :root { color-scheme: light; }
+html.dark { color-scheme: dark; }
 
 * {
   scrollbar-width: thin;
@@ -26,6 +27,12 @@ body {
   line-height: 1.65;
   background: #FFE6F0;
   color: #3A2415;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+html.dark body {
+  background: #0a0a0a;
+  color: #ffffff;
 }
 
 .fondo-terroso {
@@ -34,6 +41,7 @@ body {
     radial-gradient(40rem 22rem at 5% 80%, rgba(255,169,205,0.08), transparent 55%),
     linear-gradient(160deg, #FFE6F0 0%, #FFD9E6 60%, #FFC9D9 100%);
   min-height: 100vh;
+  transition: background 300ms ease;
 }
 .fondo-terroso::before {
   content: "";
@@ -44,6 +52,20 @@ body {
     radial-gradient(circle, rgba(92,53,34,0.07) 0.7px, transparent 0.7px);
   background-size: 200px 200px, 70px 70px;
   pointer-events: none;
+  transition: opacity 300ms ease;
+}
+
+html.dark .fondo-terroso {
+  background:
+    radial-gradient(55rem 28rem at 90% 5%, rgba(184,89,58,0.08), transparent 55%),
+    radial-gradient(40rem 22rem at 5% 80%, rgba(184,89,58,0.04), transparent 55%),
+    linear-gradient(160deg, #0a0a0a 0%, #1a1a1a 60%, #222222 100%);
+}
+
+html.dark .fondo-terroso::before {
+  background-image:
+    radial-gradient(circle, rgba(184,89,58,0.08) 1px, transparent 1px),
+    radial-gradient(circle, rgba(184,89,58,0.04) 0.7px, transparent 0.7px);
 }
 
 .alma-card {
@@ -52,13 +74,27 @@ body {
   box-shadow: 0 1px 3px rgba(92,53,34,0.08), 0 4px 16px rgba(92,53,34,0.07);
   border: 1px solid rgba(184,89,58,0.18);
   border-top: 2px solid rgba(184,89,58,0.35);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
 }
 .alma-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(92,53,34,0.08), 0 12px 32px rgba(92,53,34,0.12);
   border-color: rgba(184,89,58,0.45);
   border-top-color: rgba(184,89,58,0.70);
+}
+
+html.dark .alma-card {
+  background: rgba(30,30,30,0.95);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(184,89,58,0.12), 0 4px 16px rgba(184,89,58,0.08);
+  border-color: rgba(184,89,58,0.25);
+  border-top-color: rgba(184,89,58,0.45);
+}
+
+html.dark .alma-card:hover {
+  box-shadow: 0 4px 8px rgba(184,89,58,0.15), 0 12px 32px rgba(184,89,58,0.15);
+  border-color: rgba(184,89,58,0.5);
+  border-top-color: rgba(184,89,58,0.8);
 }
 
 .btn-terracota {
@@ -118,12 +154,22 @@ body {
   letter-spacing: 0.05em;
   color: #5C3522;
   border: 2px solid rgba(92,53,34,0.38);
-  transition: background 180ms ease, border-color 180ms ease;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
   cursor: pointer;
   text-decoration: none;
 }
 .btn-sage:hover { background: rgba(92,53,34,0.07); border-color: #B8593A; color: #9C4A2E; }
 
+html.dark .btn-sage {
+  color: #B8593A;
+  border-color: rgba(184,89,58,0.45);
+}
+
+html.dark .btn-sage:hover {
+  background: rgba(184,89,58,0.1);
+  border-color: #B8593A;
+  color: #FFB89A;
+}
 
 .organic-divider {
   height: 1.5px;
@@ -150,6 +196,10 @@ body {
   .fondo-terroso::before {
     display: none;
   }
+
+  html.dark .fondo-terroso {
+    background: linear-gradient(160deg, #0a0a0a 0%, #1a1a1a 60%, #222222 100%);
+  }
 }
 
 /* Badge cósmica (hero) */
@@ -166,6 +216,13 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #B8593A;
+  transition: background 300ms ease, border-color 300ms ease, color 300ms ease;
+}
+
+html.dark .badge-cosmica {
+  border-color: rgba(184,89,58,0.5);
+  background: rgba(184,89,58,0.12);
+  color: #FFB89A;
 }
 
 /* Anillo de aura alrededor de la imagen */
@@ -212,6 +269,12 @@ body {
   background: linear-gradient(155deg, #F5E2D5 0%, #EDD0BA 50%, #F5E6D8 100%);
   border-top: 1px solid rgba(184,89,58,0.14);
   border-bottom: 1px solid rgba(184,89,58,0.14);
+  transition: background 300ms ease, border-color 300ms ease;
+}
+
+html.dark .quote-banner {
+  background: linear-gradient(155deg, rgba(184,89,58,0.08) 0%, rgba(184,89,58,0.05) 50%, rgba(184,89,58,0.06) 100%);
+  border-color: rgba(184,89,58,0.2);
 }
 
 /* CTA final card */
@@ -219,6 +282,13 @@ body {
   background: linear-gradient(135deg, rgba(184,89,58,0.05) 0%, rgba(122,140,110,0.07) 100%);
   border: 1px solid rgba(184,89,58,0.18);
   border-top: 2px solid rgba(184,89,58,0.28);
+  transition: background 300ms ease, border-color 300ms ease;
+}
+
+html.dark .cta-final {
+  background: linear-gradient(135deg, rgba(184,89,58,0.08) 0%, rgba(122,140,110,0.06) 100%);
+  border-color: rgba(184,89,58,0.25);
+  border-top-color: rgba(184,89,58,0.4);
 }
 
 /* Respeta preferencia de movimiento reducido */
