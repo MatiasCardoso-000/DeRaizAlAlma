@@ -34,7 +34,7 @@ export default function Header() {
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
             <span className="font-body text-5xl md:text-6xl text-[#5C3522] dark:text-white transition-colors">De Raíz al Alma</span>
-            <span className="text-[0.7rem] md:text-[0.8rem] uppercase tracking-[0.22em] text-[#8A7A6E] dark:text-[#999999] font-semibold whitespace-nowrap transition-colors">
+            <span className="text-[0.7rem] md:text-[0.8rem] uppercase tracking-[0.22em] text-black dark:text-[#999999] font-semibold whitespace-nowrap transition-colors">
               Constelaciones · Tarot · Astrología
             </span>
           </div>
@@ -50,7 +50,7 @@ export default function Header() {
                 className={`text-sm font-semibold tracking-[0.03em] transition-colors pb-0.5 ${
                   isActive
                     ? "text-[#B8593A] border-b-2 border-[#B8593A] dark:text-[#FFB89A]"
-                    : "text-[#5C3522]/75 hover:text-[#B8593A] dark:text-[#cccccc] dark:hover:text-[#FFB89A]"
+                    : "text-black/75 hover:text-[#B8593A] dark:text-[#cccccc] dark:hover:text-[#FFB89A]"
                 }`}
               >
                 {link.name}
@@ -97,7 +97,7 @@ export default function Header() {
                   className={`py-2.5 px-3 rounded-xl text-sm font-semibold tracking-[0.02em] transition-colors ${
                     isActive
                       ? "text-[#B8593A] bg-[#B8593A]/10 dark:text-[#FFB89A] dark:bg-[#B8593A]/20"
-                      : "text-[#5C3522]/80 hover:text-[#B8593A] dark:text-[#cccccc] dark:hover:text-[#FFB89A]"
+                      : "text-black/80 hover:text-[#B8593A] dark:text-[#cccccc] dark:hover:text-[#FFB89A]"
                   }`}
                 >
                   {link.name}

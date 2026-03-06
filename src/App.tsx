@@ -76,7 +76,7 @@ function Home() {
             Guía cósmica para
             <span className="block text-[#B8593A] dark:text-[#FFB89A]">volver a tu centro</span>
           </h1>
-          <p className="mt-6 max-w-xl text-xl leading-relaxed text-[#5C3522]/80 dark:text-[#cccccc] sm:text-2xl md:text-2xl transition-colors">
+          <p className="mt-6 max-w-xl text-xl leading-relaxed text-black/80 dark:text-[#cccccc] sm:text-2xl md:text-2xl transition-colors">
             Un espacio cálido y espiritual para leer tu energía, ordenar tu sistema
             y crear un nuevo camino con conciencia.
           </p>
@@ -126,7 +126,7 @@ function Home() {
             Explora tu camino
           </p>
           <h2 className="font-serifDisplay text-6xl text-[#3A2415] dark:text-white sm:text-7xl transition-colors">Sesiones disponibles</h2>
-          <p className="mt-2 text-xs uppercase tracking-[0.16em] text-[#5C3522]/45 dark:text-[#999999] font-semibold transition-colors">
+          <p className="mt-2 text-xs uppercase tracking-[0.16em] text-black/45 dark:text-[#999999] font-semibold transition-colors">
             Modalidad online y presencial
           </p>
         </div>
@@ -144,7 +144,7 @@ function Home() {
               <h3 className="font-serifDisplay text-4xl md:text-4xl text-[#3A2415] dark:text-white group-hover:text-[#B8593A] dark:group-hover:text-[#FFB89A] transition-colors">
                 {servicio.titulo}
               </h3>
-              <p className="mt-3 text-lg md:text-lg leading-relaxed text-[#5C3522]/70 dark:text-[#cccccc]">{servicio.descripcion}</p>
+              <p className="mt-3 text-lg md:text-lg leading-relaxed text-black/70 dark:text-[#cccccc] transition-colors">{servicio.descripcion}</p>
               <span className="mt-4 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-[#B8593A]/70 dark:text-[#FFB89A]/70 group-hover:text-[#B8593A] dark:group-hover:text-[#FFB89A] transition-colors">
                 Explorar
                 <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
@@ -177,7 +177,7 @@ function Home() {
                 {p.icono}
               </div>
               <h3 className="font-semibold text-[#3A2415] dark:text-white tracking-wide text-sm transition-colors">{p.titulo}</h3>
-              <p className="text-sm text-[#5C3522]/65 dark:text-[#999999] leading-relaxed max-w-[200px] transition-colors">{p.desc}</p>
+              <p className="text-sm text-black/65 dark:text-[#999999] leading-relaxed max-w-[200px] transition-colors">{p.desc}</p>
             </div>
           ))}
         </div>
@@ -192,7 +192,7 @@ function Home() {
           <h2 className="font-serifDisplay text-4xl md:text-5xl text-[#3A2415] dark:text-white mb-4 transition-colors">
             Tu lectura te espera
           </h2>
-          <p className="text-[#5C3522]/70 dark:text-[#cccccc] text-sm max-w-md mx-auto mb-8 leading-relaxed transition-colors">
+          <p className="text-black/70 dark:text-[#cccccc] text-sm max-w-md mx-auto mb-8 leading-relaxed transition-colors">
             Da el primer paso hacia tu transformación. Estoy aquí para acompañarte en cada etapa del camino.
           </p>
           <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">

@@ -83,7 +83,7 @@ export default function NotFound() {
         <h1 className="font-serifDisplay text-4xl text-[#3A2415] dark:text-white sm:text-5xl mb-4 leading-tight transition-colors">
           Te perdiste en el camino
         </h1>
-        <p className="text-base text-[#5C3522]/65 dark:text-[#aaaaaa] max-w-sm mb-10 leading-relaxed transition-colors">
+        <p className="text-base text-black/65 dark:text-[#aaaaaa] max-w-sm mb-10 leading-relaxed transition-colors">
           No hay nada aquí, pero hay mucho por descubrir. Volvé al inicio y encontrá tu camino.
         </p>
 

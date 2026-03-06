@@ -87,7 +87,7 @@ export default function Constelaciones() {
             <h1 className="font-serifDisplay text-5xl leading-tight text-[#3A2415] dark:text-white sm:text-6xl md:text-5xl lg:text-6xl mb-6 transition-colors">
               Constelaciones y<span className="block text-[#B8593A] dark:text-[#FFB89A]">Reprogramación</span>
             </h1>
-            <p className="text-base leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] sm:text-lg transition-colors">
+            <p className="text-base leading-relaxed text-black/75 dark:text-[#cccccc] sm:text-lg transition-colors">
               Integro diferentes herramientas terapéuticas para acompañarte a encontrar
               la raíz de aquello que hoy genera bloqueo, dolor o repetición en tu vida.
             </p>
@@ -113,7 +113,7 @@ export default function Constelaciones() {
       <section className="mb-20 text-center animate-fade-in-up" style={{ animationDelay: "0.12s" }}>
         <div className="relative mx-auto max-w-2xl">
           <span className="font-serifDisplay block text-8xl leading-none text-[#B8593A]/15 select-none" aria-hidden="true">"</span>
-          <p className="font-serifDisplay text-2xl sm:text-3xl text-[#5C3522] dark:text-[#cccccc] leading-relaxed -mt-8 transition-colors">
+          <p className="font-serifDisplay text-2xl sm:text-3xl text-black dark:text-[#cccccc] leading-relaxed -mt-8 transition-colors">
             Este proceso no busca borrar el pasado, sino integrarlo
             desde un lugar más consciente y amoroso.
           </p>
@@ -144,7 +144,7 @@ export default function Constelaciones() {
                   {h.icono}
                 </div>
                 <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{h.titulo}</h3>
-                <p className="text-sm leading-relaxed text-[#5C3522]/75 dark:text-[#cccccc] transition-colors">{h.descripcion}</p>
+                <p className="text-sm leading-relaxed text-black/75 dark:text-[#cccccc] transition-colors">{h.descripcion}</p>
               </div>
             </article>
           ))}
