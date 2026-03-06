@@ -187,7 +187,7 @@ export default function CartaAstral() {
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-xl transition-colors group-hover:bg-[#B8593A]/18 dark:group-hover:bg-[#B8593A]/25">
                   {item.icono}
                 </div>
-                <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-[#FFB89A] mb-3 transition-colors">{item.titulo}</h3>
+                <h3 className="font-serifDisplay text-xl text-[#B8593A] dark:text-black mb-3 transition-colors">{item.titulo}</h3>
                 <p className="text-sm leading-relaxed text-black/75 dark:text-[#cccccc] transition-colors">{item.descripcion}</p>
               </div>
             </article>
@@ -201,7 +201,7 @@ export default function CartaAstral() {
           <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-black dark:text-[#888888] font-semibold transition-colors">
             Para calcularla
           </p>
-          <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-[#FFB89A] mb-8 transition-colors">¿Qué necesitás?</h2>
+          <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-black mb-8 transition-colors">¿Qué necesitás?</h2>
 
           <div className="mb-10 grid grid-cols-1 gap-5 sm:grid-cols-3">
             {requisitos.map((d) => (
