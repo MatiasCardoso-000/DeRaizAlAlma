@@ -161,7 +161,7 @@ export default function CartaAstral() {
 
       {/* ── Aspectos que exploramos ───────────────────────────── */}
       <section className="mb-20 animate-fade-in-up" style={{ animationDelay: "0.18s" }}>
-        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
+        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-black dark:text-[#888888] font-semibold transition-colors">
           Lo que descubrimos juntas
         </p>
         <h2 className="font-serifDisplay text-3xl text-[#3A2415] dark:text-white sm:text-4xl mb-10 transition-colors">
@@ -198,7 +198,7 @@ export default function CartaAstral() {
       {/* ── Qué necesitás ─────────────────────────────────────── */}
       <section className="animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
         <div className="alma-card mx-auto max-w-4xl rounded-2xl p-10 md:p-14">
-          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
+          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-black dark:text-[#888888] font-semibold transition-colors">
             Para calcularla
           </p>
           <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-[#FFB89A] mb-8 transition-colors">¿Qué necesitás?</h2>

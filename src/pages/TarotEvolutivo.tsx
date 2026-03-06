@@ -113,7 +113,7 @@ export default function TarotEvolutivo() {
 
       {/* ── Claves ────────────────────────────────────────────── */}
       <section className="mb-20 animate-fade-in-up" style={{ animationDelay: "0.18s" }}>
-        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
+        <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-black dark:text-[#888888] font-semibold transition-colors">
           Por qué es diferente
         </p>
         <h2 className="font-serifDisplay text-3xl text-[#3A2415] dark:text-white sm:text-4xl mb-10 transition-colors">

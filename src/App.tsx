@@ -88,7 +88,7 @@ function Home() {
               Ver Servicios
             </a>
           </div>
-          <div className="mt-8 flex flex-wrap gap-x-5 gap-y-1 text-[0.65rem] uppercase tracking-[0.18em] text-[#5C3522]/45 dark:text-[#888888] font-semibold transition-colors">
+          <div className="mt-8 flex flex-wrap gap-x-5 gap-y-1 text-[0.65rem] uppercase tracking-[0.18em] text-black/45 dark:text-[#888888] font-semibold transition-colors">
             <span>Online & Presencial</span>
             <span aria-hidden="true">·</span>
             <span>Sesiones Individuales</span>
@@ -122,7 +122,7 @@ function Home() {
       {/* ── Sesiones disponibles ──────────────────────────────── */}
       <section id="sesiones-disponibles" className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10">
         <div className="mb-12 text-center">
-          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-[#7A8C6E] dark:text-[#888888] font-semibold transition-colors">
+          <p className="mb-2 text-[0.65rem] uppercase tracking-[0.22em] text-black dark:text-[#888888] font-semibold transition-colors">
             Explora tu camino
           </p>
           <h2 className="font-serifDisplay text-6xl text-[#3A2415] dark:text-white sm:text-7xl transition-colors">Sesiones disponibles</h2>
