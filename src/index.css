@@ -245,6 +245,14 @@ html.dark .badge-cosmica {
   border: 1px solid rgba(184,89,58,0.18);
   border-top: 2px solid rgba(184,89,58,0.32);
   box-shadow: 0 2px 24px rgba(92,53,34,0.07);
+  transition: background 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+}
+
+html.dark .carta-hero {
+  background: linear-gradient(140deg, rgba(30,30,30,0.95) 0%, rgba(25,25,25,0.95) 45%, rgba(20,20,20,0.95) 100%);
+  border-color: rgba(184,89,58,0.25);
+  border-top-color: rgba(184,89,58,0.45);
+  box-shadow: 0 2px 24px rgba(184,89,58,0.08);
 }
 
 /* Zodiac wheel rotation (CartaAstral) */
@@ -273,7 +281,7 @@ html.dark .badge-cosmica {
 }
 
 html.dark .quote-banner {
-  background: linear-gradient(155deg, rgba(184,89,58,0.08) 0%, rgba(184,89,58,0.05) 50%, rgba(184,89,58,0.06) 100%);
+  background: linear-gradient(155deg, rgba(30,30,30,0.95) 0%, rgba(25,25,25,0.95) 50%, rgba(20,20,20,0.95) 100%);
   border-color: rgba(184,89,58,0.2);
 }
 
@@ -286,7 +294,7 @@ html.dark .quote-banner {
 }
 
 html.dark .cta-final {
-  background: linear-gradient(135deg, rgba(184,89,58,0.08) 0%, rgba(122,140,110,0.06) 100%);
+  background: linear-gradient(135deg, rgba(30,30,30,0.95) 0%, rgba(25,25,25,0.95) 100%);
   border-color: rgba(184,89,58,0.25);
   border-top-color: rgba(184,89,58,0.4);
 }
