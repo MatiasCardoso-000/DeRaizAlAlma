@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { useDarkMode } from "../hooks/useDarkMode";
+import OptimizedImage from "./OptimizedImage";
 import { getWAUrl, WA_MESSAGES } from "../constants";
 // @ts-ignore
 import logo from "../assets/logo.png";
@@ -25,10 +26,10 @@ export default function Header() {
       <div className="flex w-full items-center justify-between px-6 py-3 md:px-10">
         <Link to="/" className="flex items-center gap-3 group transition-opacity hover:opacity-90">
           <div className="relative">
-            <img
+            <OptimizedImage
               src={logo}
               alt="De Raíz al Alma"
-              decoding="async"
+              loading="eager"
               fetchPriority="high"
               className="h-40 w-40 rounded-full object-cover shadow-md ring-2 ring-[#B8593A]/30 transition-all group-hover:ring-[#B8593A]/60 md:h-40 md:w-40"
             />

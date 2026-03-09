@@ -7,6 +7,7 @@ import TarotEvolutivo from "./pages/TarotEvolutivo";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import OptimizedImage from "./components/OptimizedImage";
 import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "./constants";
 import { SERVICIOS, PILARES } from "./data/services";
 // @ts-ignore
@@ -92,10 +93,11 @@ function Home() {
             {/* Anillos decorativos */}
             <div className="absolute h-[calc(100%+48px)] w-[calc(100%+48px)] rounded-2xl border border-[#B8593A]/10 animate-aura-ring" />
             <div className="absolute h-[calc(100%+24px)] w-[calc(100%+24px)] rounded-xl border border-[#B8593A]/18" />
-            <img
+            <OptimizedImage
               src={cartaAstralImg}
+              webpSrc="/assets/optimized/carta-astral.webp"
               alt="Carta Astral"
-              decoding="async"
+              loading="eager"
               fetchPriority="high"
               className="animate-float relative w-full max-w-[150px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 md:max-w-[360px]"
             />
