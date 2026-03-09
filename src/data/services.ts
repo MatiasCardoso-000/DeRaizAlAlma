@@ -147,34 +147,26 @@ export const TAROT_EVOLUTIVO_CLAVES = [
   {
     id: "presente",
     num: "I",
-    titulo: "Tu Presente",
+    titulo: "Lectura Consciente",
     icono: "🎴",
     descripcion:
-      "Comprende dónde estás ahora: tus circunstancias, emociones y el contexto que rodea tu situación.",
+      "Se concentra en el «aquí y ahora» y las acciones que puedes tomar hoy. Es un espejo para identificar bloqueos, patrones repetitivos y potenciar tus habilidades latentes.",
   },
   {
     id: "empoderamiento",
     num: "II",
-    titulo: "Tu Empoderamiento",
+    titulo: "Empoderamiento Evolutivo",
     icono: "⚡",
     descripcion:
-      "Descubre tu poder latente: qué recursos, cualidades y fuerzas tienes para transformar tu realidad.",
-  },
-  {
-    id: "herramienta",
-    num: "III",
-    titulo: "Tu Herramienta",
-    icono: "🔑",
-    descripcion:
-      "Recibe guía práctica: acciones, perspectivas y cambios que puedes implementar ahora mismo.",
+      "Te posicionas como cocreador de tu futuro, utilizando la lectura para tomar las riendas de tu vida. Funciona como una herramienta psicoterapéutica para tu transformación.",
   },
   {
     id: "autoconocimiento",
-    num: "IV",
-    titulo: "Tu Autoconocimiento",
+    num: "III",
+    titulo: "Autoconocimiento Profundo",
     icono: "🪞",
     descripcion:
-      "Integra la lección: qué aprendes de ti mismo y cómo evoluciona tu conciencia a través de esta lectura.",
+      "Busca entender el «por qué» de las situaciones, promoviendo la introspección y reflexión profunda sobre tu proceso evolutivo. Integra la lección y evoluciona tu conciencia.",
   },
 ];
 
