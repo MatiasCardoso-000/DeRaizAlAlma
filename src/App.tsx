@@ -7,6 +7,7 @@ import TarotEvolutivo from "./pages/TarotEvolutivo";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import OptimizedImage from "./components/OptimizedImage";
 import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "./constants";
 import { SERVICIOS, PILARES } from "./data/services";
 // @ts-ignore
@@ -70,10 +71,20 @@ function Home() {
             y crear un nuevo camino con conciencia.
           </p>
           <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:items-start sm:flex-wrap sm:gap-4">
-            <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde text-center">
+            <a
+              href={WA_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-verde text-center"
+              aria-label="Reservar turno a través de WhatsApp (se abre en ventana nueva)"
+            >
               Reservar Turno
             </a>
-            <a href="#sesiones-disponibles" className="btn-sage text-center flex items-center justify-center">
+            <a
+              href="#sesiones-disponibles"
+              className="btn-sage text-center flex items-center justify-center"
+              aria-label="Ver servicios disponibles"
+            >
               Ver Servicios
             </a>
           </div>
@@ -92,10 +103,11 @@ function Home() {
             {/* Anillos decorativos */}
             <div className="absolute h-[calc(100%+48px)] w-[calc(100%+48px)] rounded-2xl border border-[#B8593A]/10 animate-aura-ring" />
             <div className="absolute h-[calc(100%+24px)] w-[calc(100%+24px)] rounded-xl border border-[#B8593A]/18" />
-            <img
+            <OptimizedImage
               src={cartaAstralImg}
+              webpSrc="/assets/optimized/carta-astral.webp"
               alt="Carta Astral"
-              decoding="async"
+              loading="eager"
               fetchPriority="high"
               className="animate-float relative w-full max-w-[150px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/25 md:max-w-[360px]"
             />
@@ -184,7 +196,13 @@ function Home() {
           <p className="text-black/70 dark:text-[#cccccc] text-sm max-w-md mx-auto mb-8 leading-relaxed transition-colors">
             Da el primer paso hacia tu transformación. Estoy aquí para acompañarte en cada etapa del camino.
           </p>
-          <a href={WA_URL} target="_blank" rel="noreferrer" className="btn-verde">
+          <a
+            href={WA_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-verde"
+            aria-label="Contactar por WhatsApp (se abre en ventana nueva)"
+          >
             Escribime por WhatsApp
           </a>
         </div>

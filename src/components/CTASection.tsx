@@ -5,6 +5,7 @@ interface CTASectionProps {
   ctaUrl: string;
   label?: string;
   delay?: string;
+  ctaAriaLabel?: string;
 }
 
 export default function CTASection({
@@ -14,6 +15,7 @@ export default function CTASection({
   ctaUrl,
   label = "¿Lista para comenzar?",
   delay = "0.4s",
+  ctaAriaLabel,
 }: CTASectionProps) {
   return (
     <section className="animate-fade-in-up" style={{ animationDelay: delay }}>
@@ -32,6 +34,7 @@ export default function CTASection({
           target="_blank"
           rel="noreferrer"
           className="btn-verde"
+          aria-label={ctaAriaLabel || `${ctaText} (se abre en WhatsApp)`}
         >
           {ctaText}
         </a>

@@ -1,5 +1,6 @@
 import PageLayout from "../components/PageLayout";
 import { useSeo } from "../hooks/useSeo";
+import OptimizedImage from "../components/OptimizedImage";
 import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "../constants";
 import { CONSTELACIONES_HERRAMIENTAS } from "../data/services";
 // @ts-ignore
@@ -75,10 +76,11 @@ export default function Constelaciones() {
             <div className="relative">
               <div className="pointer-events-none absolute h-[calc(100%+40px)] w-[calc(100%+40px)] -top-5 -left-5 rounded-xl border border-[#B8593A]/12 animate-aura-ring" />
               <div className="pointer-events-none absolute h-[calc(100%+20px)] w-[calc(100%+20px)] -top-2.5 -left-2.5 rounded-xl border border-[#B8593A]/18" />
-              <img
+              <OptimizedImage
                 src={arbolLibroImg}
+                webpSrc="/assets/optimized/arbol-libro.webp"
                 alt="Árbol de la vida"
-                decoding="async"
+                loading="eager"
                 fetchPriority="high"
                 className="relative w-full max-w-[280px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/20 animate-float"
               />
