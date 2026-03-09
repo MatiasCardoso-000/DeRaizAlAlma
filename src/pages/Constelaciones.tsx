@@ -1,33 +1,11 @@
 import PageLayout from "../components/PageLayout";
 import { useSeo } from "../hooks/useSeo";
+import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "../constants";
+import { CONSTELACIONES_HERRAMIENTAS } from "../data/services";
 // @ts-ignore
 import arbolLibroImg from "../assets/arbol-libro.jpeg";
 
-const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero agendar mi sesion de Constelaciones. Siento que es el momento de sanar desde la raiz.")}`;
-
-const herramientas = [
-  {
-    num: "I",
-    titulo: "Constelaciones Familiares",
-    icono: "🌳",
-    descripcion:
-      "A través de las Constelaciones Familiares, exploramos los vínculos y dinámicas del sistema al que pertenecés, para identificar posibles lealtades invisibles, mandatos o heridas emocionales que pueden estar actuando de manera consciente o inconsciente.",
-  },
-  {
-    num: "II",
-    titulo: "Regresiones con Hipnosis Clínica",
-    icono: "🌀",
-    descripcion:
-      "Profundizamos ese origen mediante regresiones con hipnosis clínica, accediendo a memorias que el cuerpo y el inconsciente aún sostienen.",
-  },
-  {
-    num: "III",
-    titulo: "Desprogramación Emocional",
-    icono: "✨",
-    descripcion:
-      "Una vez que la herida es traída a la luz y comprendida, trabajamos con técnicas de desprogramación emocional. Esto implica resignificar la experiencia, transformando la carga asociada al recuerdo.",
-  },
-];
+const WA_URL = getWAUrl(WA_MESSAGES.CONSTELACIONES);
 
 /** Constelación familiar: nodos conectados por líneas finas */
 function ConstellationSVG() {
@@ -127,11 +105,11 @@ export default function Constelaciones() {
         <h2 className="font-serifDisplay text-3xl text-[#3A2415] dark:text-white sm:text-4xl mb-10 transition-colors">Herramientas que integro</h2>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {herramientas.map((h, i) => (
+          {CONSTELACIONES_HERRAMIENTAS.map((h, i) => (
             <article
               key={h.titulo}
               className="group alma-card relative overflow-hidden rounded-xl p-8 transition-all hover:-translate-y-1 animate-fade-in-up"
-              style={{ animationDelay: `${0.22 + i * 0.08}s` }}
+              style={{ animationDelay: `${ANIMATION_DELAYS.STAGGER_QUOTE + i * ANIMATION_DELAYS.STAGGER}s` }}
             >
               <span
                 className="pointer-events-none absolute -top-4 -right-1 select-none font-serifDisplay text-9xl leading-none text-[#B8593A]/7"

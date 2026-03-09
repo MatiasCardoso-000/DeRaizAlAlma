@@ -1,40 +1,9 @@
 import PageLayout from "../components/PageLayout";
 import { useSeo } from "../hooks/useSeo";
+import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "../constants";
+import { CARTA_ASTRAL_ASPECTOS, CARTA_ASTRAL_REQUISITOS } from "../data/services";
 
-const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero conocer mi Carta Astral. Estoy lista/listo para descubrir el mapa de mi alma.")}`;
-
-const aspectos = [
-  {
-    id: "exploracion",
-    num: "I",
-    titulo: "Tus dones y desafíos",
-    icono: "✨",
-    descripcion:
-      "A través de ella exploramos tus dones, tus desafíos, tus patrones emocionales y las experiencias que tu alma eligió transitar para evolucionar.",
-  },
-  {
-    id: "comprension",
-    num: "II",
-    titulo: "Patrones que se repiten",
-    icono: "🔄",
-    descripcion:
-      "Nos permite comprender por qué ciertas situaciones se repiten, qué energías te impulsan y cuáles necesitan ser integradas.",
-  },
-  {
-    id: "vinculos",
-    num: "III",
-    titulo: "Vínculos y espejos",
-    icono: "🪞",
-    descripcion:
-      "La misma nos dice como sos en la vida, en los vínculos y porque ciertas personas se acercan a vos como espejo para evolucionar.",
-  },
-];
-
-const requisitos = [
-  { label: "Fecha de Nacimiento", sub: "Día, mes y año exactos",            icono: "📅" },
-  { label: "Hora Exacta",         sub: "Indispensable para el Ascendente",  icono: "🕐" },
-  { label: "Lugar de Origen",     sub: "Ciudad y país donde naciste",       icono: "📍" },
-];
+const WA_URL = getWAUrl(WA_MESSAGES.CARTA_ASTRAL);
 
 function ZodiacWheel() {
   const ticks = Array.from({ length: 12 });
@@ -169,11 +138,11 @@ export default function CartaAstral() {
         </h2>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {aspectos.map((item, i) => (
+          {CARTA_ASTRAL_ASPECTOS.map((item, i) => (
             <article
               key={item.id}
               className="group alma-card relative overflow-hidden rounded-xl p-8 transition-all hover:-translate-y-1 animate-fade-in-up"
-              style={{ animationDelay: `${0.22 + i * 0.08}s` }}
+              style={{ animationDelay: `${ANIMATION_DELAYS.STAGGER_QUOTE + i * ANIMATION_DELAYS.STAGGER}s` }}
             >
               {/* Large background roman numeral */}
               <span
@@ -204,7 +173,7 @@ export default function CartaAstral() {
           <h2 className="font-serifDisplay text-3xl text-[#B8593A] dark:text-black mb-8 transition-colors">¿Qué necesitás?</h2>
 
           <div className="mb-10 grid grid-cols-1 gap-5 sm:grid-cols-3">
-            {requisitos.map((d) => (
+            {CARTA_ASTRAL_REQUISITOS.map((d) => (
               <div
                 key={d.label}
                 className="rounded-xl border border-[#B8593A]/15 dark:border-[#B8593A]/25 bg-[#EDE0CF]/50 dark:bg-[#2a2a2a] p-5 transition-colors"
