@@ -67,6 +67,20 @@ html.dark body {
   color: #ffffff;
 }
 
+/* Headings */
+h2 {
+  transition: color 300ms ease;
+}
+
+h3 {
+  transition: color 300ms ease;
+}
+
+html.dark h2,
+html.dark h3 {
+  color: #ffffff;
+}
+
 .fondo-terroso {
   background:
     radial-gradient(55rem 28rem at 90% 5%, rgba(240,184,216,0.12), transparent 55%),
