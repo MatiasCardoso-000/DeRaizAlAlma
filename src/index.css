@@ -11,12 +11,44 @@
   }
 }
 
-:root { color-scheme: light; }
+:root {
+  color-scheme: light;
+
+  /* Color palette */
+  --color-terracota: #B8593A;
+  --color-brown-dark: #3A2415;
+  --color-brown-dark-2: #5C3522;
+  --color-cream: #F5EDE0;
+  --color-pink-light: #FFE6F0;
+  --color-pink-light-2: #FFD9E6;
+  --color-pink-light-3: #FFC9D9;
+  --color-black-dark: #0a0a0a;
+  --color-grey-dark: #1a1a1a;
+  --color-grey-dark-2: #222222;
+  --color-green-sage: #7fceb0;
+  --color-green-dark: #4E7565;
+  --color-green-complement: #7A8C6E;
+  --color-orange-light: #FFB89A;
+
+  /* Animation durations */
+  --duration-zodiac-rotate: 80s;
+  --duration-float: 6s;
+  --duration-star-pulse: 3.5s;
+  --duration-diamond-pulse: 7s;
+  --duration-aura-ring: 5s;
+  --duration-fade-in-up: 0.65s;
+
+  /* Animation delays */
+  --delay-stagger: 0.08s;
+  --delay-stagger-large: 0.12s;
+  --delay-stagger-quote: 0.22s;
+}
+
 html.dark { color-scheme: dark; }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(184,89,58,0.35) transparent;
+  scrollbar-color: rgba(184, 89, 58, 0.35) transparent;
 }
 
 body {
@@ -185,8 +217,8 @@ html.dark .btn-sage:hover {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.animate-float      { animation: float 6s ease-in-out infinite; }
-.animate-fade-in-up { animation: fadeInUp 0.65s ease-out forwards; }
+.animate-float      { animation: float var(--duration-float) ease-in-out infinite; }
+.animate-fade-in-up { animation: fadeInUp var(--duration-fade-in-up) ease-out forwards; }
 
 /* Rendimiento móvil: fondo simplificado */
 @media (max-width: 768px) {
@@ -230,14 +262,14 @@ html.dark .badge-cosmica {
   0%, 100% { opacity: 0.45; transform: scale(1); }
   50%       { opacity: 0.2;  transform: scale(1.025); }
 }
-.animate-aura-ring { animation: auraRing 5s ease-in-out infinite; }
+.animate-aura-ring { animation: auraRing var(--duration-aura-ring) ease-in-out infinite; }
 
 /* Estrella pulsante (puntos decorativos) */
 @keyframes starPulse {
   0%, 100% { opacity: 0.35; transform: scale(1); }
   50%       { opacity: 0.75; transform: scale(1.4); }
 }
-.animate-star-pulse { animation: starPulse 3.5s ease-in-out infinite; }
+.animate-star-pulse { animation: starPulse var(--duration-star-pulse) ease-in-out infinite; }
 
 /* Hero de Carta Astral */
 .carta-hero {
@@ -260,7 +292,7 @@ html.dark .carta-hero {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-.zodiac-wheel { animation: zodiacRotate 80s linear infinite; }
+.zodiac-wheel { animation: zodiacRotate var(--duration-zodiac-rotate) linear infinite; }
 
 /* Solar orbit rotation (RevolucionSolar) */
 .solar-orbit-svg { animation: zodiacRotate 120s linear infinite; }
@@ -270,7 +302,7 @@ html.dark .carta-hero {
   0%, 100% { opacity: 0.70; }
   50%       { opacity: 0.40; }
 }
-.tarot-svg { animation: diamondPulse 7s ease-in-out infinite; }
+.tarot-svg { animation: diamondPulse var(--duration-diamond-pulse) ease-in-out infinite; }
 
 /* Quote banner */
 .quote-banner {

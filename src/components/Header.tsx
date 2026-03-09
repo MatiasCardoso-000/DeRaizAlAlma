@@ -1,10 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { useDarkMode } from "../hooks/useDarkMode";
-
-const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Me gustaría agendar una sesión. Podes contarme mas sobre tus servicios?")}`;
+import { getWAUrl, WA_MESSAGES } from "../constants";
 // @ts-ignore
 import logo from "../assets/logo.png";
+
+const WA_URL = getWAUrl(WA_MESSAGES.HEADER);
 
 export default function Header() {
   const location = useLocation();

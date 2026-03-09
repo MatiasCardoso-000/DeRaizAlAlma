@@ -1,31 +1,9 @@
 import PageLayout from "../components/PageLayout";
 import { useSeo } from "../hooks/useSeo";
+import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "../constants";
+import { REVOLUCION_SOLAR_ASPECTOS, REVOLUCION_SOLAR_DATOS } from "../data/services";
 
-const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero encargar mi Revolucion Solar. Estoy lista/listo para vivir este ciclo con conciencia y direccion.")}`;
-
-const aspectos = [
-  {
-    num: "I",
-    titulo: "Temas del año",
-    icono: "📅",
-    descripcion:
-      "Nos muestra cuáles serán los temas centrales del ciclo, dónde estará puesta la energía, qué áreas pedirán mayor atención y qué oportunidades de crecimiento se activarán.",
-  },
-  {
-    num: "II",
-    titulo: "Conciencia y alineación",
-    icono: "🧭",
-    descripcion:
-      "Trabajar con tu Revolución Solar no es para \"anticipar el futuro\", sino para atravesar el año con mayor conciencia, alineación y coherencia.",
-  },
-  {
-    num: "III",
-    titulo: "De reaccionar a crear",
-    icono: "🌱",
-    descripcion:
-      "Cuando sabés qué energía está disponible, podés usarla a tu favor. En lugar de reaccionar, empezás a crear.",
-  },
-];
+const WA_URL = getWAUrl(WA_MESSAGES.REVOLUCION_SOLAR);
 
 /** Órbitas solares: elipses concéntricas a distintos ángulos */
 function SolarOrbitSVG() {
@@ -113,11 +91,11 @@ export default function RevolucionSolar() {
         <h2 className="font-serifDisplay text-3xl text-[#3A2415] dark:text-white sm:text-4xl mb-10 transition-colors">Tu ciclo, en foco</h2>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {aspectos.map((a, i) => (
+          {REVOLUCION_SOLAR_ASPECTOS.map((a, i) => (
             <article
               key={a.titulo}
               className="group alma-card relative overflow-hidden rounded-xl p-8 transition-all hover:-translate-y-1 animate-fade-in-up"
-              style={{ animationDelay: `${0.22 + i * 0.08}s` }}
+              style={{ animationDelay: `${ANIMATION_DELAYS.STAGGER_QUOTE + i * ANIMATION_DELAYS.STAGGER}s` }}
             >
               <span
                 className="pointer-events-none absolute -top-4 -right-1 select-none font-serifDisplay text-9xl leading-none text-[#B8593A]/7"
@@ -140,21 +118,17 @@ export default function RevolucionSolar() {
       {/* ── Cuándo realizarla ─────────────────────────────────── */}
       <section className="mb-20 animate-fade-in-up" style={{ animationDelay: "0.32s" }}>
         <div className="grid gap-5 sm:grid-cols-3 text-center">
-          {[
-            { icono: "🎂", titulo: "Antes de tu cumpleaños", desc: "Lo ideal es realizarla días antes de tu fecha para llegar al nuevo ciclo con claridad." },
-            { icono: "🗓️", titulo: "Una vez al año",         desc: "Se hace una vez por ciclo solar. Es tu brújula para los próximos 12 meses." },
-            { icono: "🌍", titulo: "Online o presencial",    desc: "Podés hacerla desde cualquier lugar del mundo." },
-          ].map((p, i) => (
+          {REVOLUCION_SOLAR_DATOS.map((p, i) => (
             <div
-              key={p.titulo}
+              key={p.label}
               className="flex flex-col items-center gap-3 animate-fade-in-up"
-              style={{ animationDelay: `${0.36 + i * 0.08}s` }}
+              style={{ animationDelay: `${0.36 + i * ANIMATION_DELAYS.STAGGER}s` }}
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-2xl transition-colors">
                 {p.icono}
               </div>
-              <h3 className="font-semibold text-[#3A2415] dark:text-white text-sm tracking-wide transition-colors">{p.titulo}</h3>
-              <p className="text-xs text-black/60 dark:text-[#aaaaaa] leading-relaxed max-w-[190px] transition-colors">{p.desc}</p>
+              <h3 className="font-semibold text-[#3A2415] dark:text-white text-sm tracking-wide transition-colors">{p.label}</h3>
+              <p className="text-xs text-black/60 dark:text-[#aaaaaa] leading-relaxed max-w-[190px] transition-colors">{p.sub}</p>
             </div>
           ))}
         </div>

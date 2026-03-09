@@ -7,6 +7,8 @@ import TarotEvolutivo from "./pages/TarotEvolutivo";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "./constants";
+import { SERVICIOS, PILARES } from "./data/services";
 // @ts-ignore
 import cartaAstralImg from "./assets/carta-astral.jpeg";
 
@@ -16,20 +18,7 @@ function ScrollToTop() {
   return null;
 }
 
-const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Me gustaría reservar una sesión. Podes contarme mas sobre tus servicios?")}`;
-
-const servicios = [
-  { titulo: "Carta Astral",          descripcion: "Descubre tus dones, desafíos y propósito con un mapa energético profundo.", link: "/carta-astral",     icono: "🌅" },
-  { titulo: "Revolución Solar",      descripcion: "Activa tu nuevo ciclo anual con claridad para decisiones, relaciones y trabajo.", link: "/revolucion-solar", icono: "☀️" },
-  { titulo: "Constelación Familiar", descripcion: "Sana patrones del linaje y recupera tu fuerza vital desde la raíz del alma.", link: "/constelaciones",   icono: "🌳" },
-  { titulo: "Tarot Evolutivo",       descripcion: "Lecturas conscientes para abrir caminos, entender bloqueos y elegir con confianza.", link: "/tarot-evolutivo",  icono: "🕯️" },
-];
-
-const pilares = [
-  { icono: "🌐", titulo: "Online & Presencial", desc: "Sesiones adaptadas a tu lugar y ritmo de vida, desde cualquier rincón." },
-  { icono: "✨", titulo: "Totalmente Personalizado", desc: "Cada lectura es única, diseñada para tu momento y tu historia." },
-  { icono: "🌱", titulo: "Enfoque Transformador", desc: "Herramientas para sanar desde la raíz y avanzar con conciencia." },
-];
+const WA_URL = getWAUrl(WA_MESSAGES.GENERAL);
 
 function StarDot({ style }: { style: React.CSSProperties }) {
   return (
@@ -131,12 +120,12 @@ function Home() {
           </p>
         </div>
         <div className="grid gap-5 sm:grid-cols-2">
-          {servicios.map((servicio, i) => (
+          {SERVICIOS.map((servicio, i) => (
             <Link
               to={servicio.link}
               key={servicio.titulo}
               className="group alma-card rounded-xl border border-[#B8593A]/15 p-7 transition-all hover:-translate-y-1 hover:border-[#B8593A]/40 animate-fade-in-up dark:border-[#B8593A]/25"
-              style={{ animationDelay: `${i * 0.08}s` }}
+              style={{ animationDelay: `${i * ANIMATION_DELAYS.STAGGER}s` }}
             >
               <div className="mb-4 flex h-13 w-13 items-center justify-center rounded-full bg-[#B8593A]/8 dark:bg-[#B8593A]/15 text-2xl group-hover:bg-[#B8593A]/15 dark:group-hover:bg-[#B8593A]/25 transition-colors" style={{ width: 52, height: 52 }}>
                 {servicio.icono}
@@ -167,11 +156,11 @@ function Home() {
       {/* ── 3 Pilares ────────────────────────────────────────── */}
       <section className="mx-auto w-full max-w-6xl px-6 py-16 md:px-10">
         <div className="grid gap-10 sm:grid-cols-3 text-center">
-          {pilares.map((p, i) => (
+          {PILARES.map((p, i) => (
             <div
               key={p.titulo}
               className="flex flex-col items-center gap-3 animate-fade-in-up"
-              style={{ animationDelay: `${i * 0.1}s` }}
+              style={{ animationDelay: `${i * ANIMATION_DELAYS.STAGGER_LARGE}s` }}
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#B8593A]/10 dark:bg-[#B8593A]/15 text-3xl transition-colors">
                 {p.icono}

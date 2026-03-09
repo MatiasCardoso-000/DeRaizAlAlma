@@ -1,38 +1,9 @@
 import PageLayout from "../components/PageLayout";
 import { useSeo } from "../hooks/useSeo";
+import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "../constants";
+import { TAROT_EVOLUTIVO_CLAVES } from "../data/services";
 
-const WA_URL = `https://wa.me/5491162373100?text=${encodeURIComponent("Hola! Quiero solicitar una lectura de Tarot Evolutivo. Estoy lista/listo para escuchar lo que mi inconsciente tiene para decirme.")}`;
-
-const claves = [
-  {
-    num: "I",
-    titulo: "Enfoque en el Presente",
-    icono: "⏳",
-    descripcion:
-      "Se concentra en el «aquí y ahora» y en las acciones que puedes tomar hoy, diferenciándose del tarot predictivo que se enfoca en sucesos futuros.",
-  },
-  {
-    num: "II",
-    titulo: "Empoderamiento",
-    icono: "👑",
-    descripcion:
-      "Te posicionas como cocreador de tu futuro, utilizando la lectura para tomar las riendas de tu vida y elegir con conciencia.",
-  },
-  {
-    num: "III",
-    titulo: "Herramienta Psicoterapéutica",
-    icono: "🕯️",
-    descripcion:
-      "Funciona como un espejo para identificar bloqueos, patrones repetitivos y potenciar tus habilidades personales latentes.",
-  },
-  {
-    num: "IV",
-    titulo: "Autoconocimiento",
-    icono: "🧘",
-    descripcion:
-      "Busca entender el «por qué» de las situaciones, promoviendo la introspección y la reflexión profunda sobre tu proceso evolutivo.",
-  },
-];
+const WA_URL = getWAUrl(WA_MESSAGES.TAROT_EVOLUTIVO);
 
 /** Forma de carta de tarot abstracta — diamante con ojo interior */
 function TarotCardSVG() {
@@ -121,11 +92,11 @@ export default function TarotEvolutivo() {
         </h2>
 
         <div className="grid gap-6 md:grid-cols-2">
-          {claves.map((c, i) => (
+          {TAROT_EVOLUTIVO_CLAVES.map((c, i) => (
             <article
               key={c.titulo}
               className="group alma-card relative overflow-hidden rounded-xl p-8 transition-all hover:-translate-y-1 animate-fade-in-up"
-              style={{ animationDelay: `${0.22 + i * 0.08}s` }}
+              style={{ animationDelay: `${ANIMATION_DELAYS.STAGGER_QUOTE + i * ANIMATION_DELAYS.STAGGER}s` }}
             >
               <span
                 className="pointer-events-none absolute -top-4 -right-1 select-none font-serifDisplay text-9xl leading-none text-[#B8593A]/7"
