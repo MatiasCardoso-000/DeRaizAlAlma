@@ -105,7 +105,6 @@ function Home() {
             <div className="absolute h-[calc(100%+24px)] w-[calc(100%+24px)] rounded-xl border border-[#B8593A]/18" />
             <OptimizedImage
               src={cartaAstralImg}
-              webpSrc="/assets/optimized/carta-astral.webp"
               alt="Carta Astral"
               loading="eager"
               fetchPriority="high"
