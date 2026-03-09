@@ -78,7 +78,6 @@ export default function Constelaciones() {
               <div className="pointer-events-none absolute h-[calc(100%+20px)] w-[calc(100%+20px)] -top-2.5 -left-2.5 rounded-xl border border-[#B8593A]/18" />
               <OptimizedImage
                 src={arbolLibroImg}
-                webpSrc="/assets/optimized/arbol-libro.webp"
                 alt="Árbol de la vida"
                 loading="eager"
                 fetchPriority="high"
