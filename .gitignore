@@ -1,5 +1,5 @@
-node_modules
-.agents
-.claude
+node_modules/
+.agents/
+.claude/
 CLAUDE.md
-dist
+dist/
