@@ -1,5 +1,5 @@
 // Phone and WhatsApp configuration
-export const WA_PHONE = '5491162373100';
+export const WA_PHONE = '+5493425221890';
 
 export const getWAUrl = (message: string): string =>
   `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`;
