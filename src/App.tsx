@@ -36,10 +36,12 @@ function StarDot({ style }: { style: React.CSSProperties }) {
 
 function Home() {
   const scrollToServices = () => {
-    document.getElementById("sesiones-disponibles")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    const target = document.getElementById("sesiones-disponibles");
+    if (target) {
+      const offset = 80;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
   };
 
   return (
