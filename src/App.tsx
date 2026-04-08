@@ -35,6 +35,13 @@ function StarDot({ style }: { style: React.CSSProperties }) {
 }
 
 function Home() {
+  const scrollToServices = () => {
+    document.getElementById("sesiones-disponibles")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <div className="fondo-terroso relative overflow-hidden text-[#3A2415] dark:text-white transition-colors">
       {/* Decoraciones celestes de fondo */}
@@ -80,13 +87,14 @@ function Home() {
             >
               Reservar Turno
             </a>
-            <a
-              href="#sesiones-disponibles"
+            <button
+              type="button"
+              onClick={scrollToServices}
               className="btn-sage text-center flex items-center justify-center"
               aria-label="Ver servicios disponibles"
             >
               Ver Servicios
-            </a>
+            </button>
           </div>
           <div className="mt-8 flex flex-wrap gap-x-5 gap-y-1 text-[0.65rem] uppercase tracking-[0.18em] text-black/45 dark:text-[#888888] font-semibold transition-colors">
             <span>Online & Presencial</span>
