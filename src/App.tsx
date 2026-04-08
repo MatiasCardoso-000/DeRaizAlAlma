@@ -12,6 +12,8 @@ import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "./constants";
 import { SERVICIOS, PILARES } from "./data/services";
 // @ts-ignore
 import cartaAstralImg from "./assets/carta-astral.jpeg";
+import { Analytics } from "@vercel/analytics/next"
+
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -234,6 +236,7 @@ export default function App() {
         <Route path="/tarot-evolutivo"  element={<TarotEvolutivo />} />
         <Route path="*"                 element={<NotFound />} />
       </Routes>
+      <Analytics/>
     </div>
   );
 }
