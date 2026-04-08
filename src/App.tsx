@@ -12,7 +12,7 @@ import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "./constants";
 import { SERVICIOS, PILARES } from "./data/services";
 // @ts-ignore
 import cartaAstralImg from "./assets/carta-astral.jpeg";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 
 function ScrollToTop() {
