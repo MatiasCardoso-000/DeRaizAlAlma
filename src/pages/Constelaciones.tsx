@@ -5,6 +5,8 @@ import { getWAUrl, WA_MESSAGES, ANIMATION_DELAYS } from "../constants";
 import { CONSTELACIONES_HERRAMIENTAS } from "../data/services";
 // @ts-ignore
 import arbolLibroImg from "../assets/arbol-libro.jpeg";
+// @ts-ignore
+import constelacionesImg from "../assets/constelaciones.png";
 
 const WA_URL = getWAUrl(WA_MESSAGES.CONSTELACIONES);
 
@@ -97,6 +99,23 @@ export default function Constelaciones() {
             desde un lugar más consciente y amoroso.
           </p>
           <div className="mt-8 h-px w-20 bg-gradient-to-r from-transparent via-[#B8593A]/35 to-transparent mx-auto" />
+        </div>
+      </section>
+
+      {/* ── Imagen decorativa ───────────────────────────────────── */}
+      <section className="mb-20 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+        <div className="flex justify-center">
+          <div className="relative">
+            <div className="pointer-events-none absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -top-3 -left-3 rounded-xl border border-[#B8593A]/10 animate-aura-ring" />
+            <div className="pointer-events-none absolute h-[calc(100%+15px)] w-[calc(100%+15px)] -top-1.5 -left-1.5 rounded-xl border border-[#B8593A]/15" />
+            <OptimizedImage
+              src={constelacionesImg}
+              alt="Constelaciones familiares"
+              loading="eager"
+              fetchPriority="high"
+              className="relative w-full max-w-[320px] rounded-xl object-cover shadow-aura ring-2 ring-[#B8593A]/15"
+            />
+          </div>
         </div>
       </section>
 
